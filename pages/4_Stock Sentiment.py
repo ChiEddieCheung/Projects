@@ -19,14 +19,15 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 #warnings.filterwarnings('ignore')
 
+#st.sidebar.title('StockTwits Sentiment Metric')
 symbol = st.sidebar.text_input("Enter a stock ticker:", max_chars=5)
-st.sidebar.title('StockTwits Sentiment Metric for {symobol}')
 
 if symbol != '':
     url = 'https://api.stocktwits.com/api/2/streams/symbol/{}.json'.format(symbol)
     
     try:
-        data = requests.get(url).json()        
+        data = requests.get(url).json()  
+        st.title('StockTwits Sentiment Metric for')
         st.title(data['symbol']['title'])
 
         df = pd.DataFrame()     #Initialize blank data frame
