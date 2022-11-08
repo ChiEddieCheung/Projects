@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+from pathlib import Path
 
 hide_menu = """
     <style>
@@ -17,6 +18,8 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.title('Powerball Number Analysis')
 
+powerball_csv = Path(__file__).parents[1]
+st.write(powerball_csv)
 df = pd.read_csv('projects/pages/powerball.csv')
 
 df1 = pd.DataFrame(df, columns = ['Draw Date', 'P1', 'P2', 'P3', 'P4', 'P5'])
