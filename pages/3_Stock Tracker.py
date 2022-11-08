@@ -36,8 +36,4 @@ if (ticker_Sym != ''):
     st.area_chart(tickerDf.Close)
     st.line_chart(tickerDf.Volume)
     
-   st.set_page_config(
-    page_title="TV Tracker",
-    layout = "wide",
-    initial_sidebar_state="expanded"
-    )
+   st.set_page_config(page_title="TV Tracker",layout = "wide",initial_sidebar_state="expanded")
