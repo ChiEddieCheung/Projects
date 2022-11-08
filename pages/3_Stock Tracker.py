@@ -12,6 +12,8 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
+st.set_page_config(page_title="TV Tracker",layout = "wide",initial_sidebar_state="expanded")
+
 ticker_Sym = st.sidebar.text_input('Enter a stock ticker:')
 ticker_Data = yf.Ticker(ticker_Sym)
 
@@ -35,5 +37,3 @@ if (ticker_Sym != ''):
 
     st.area_chart(tickerDf.Close)
     st.line_chart(tickerDf.Volume)
-    
- st.set_page_config(page_title="TV Tracker",layout = "wide",initial_sidebar_state="expanded")
