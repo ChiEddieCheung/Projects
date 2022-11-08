@@ -1,0 +1,41 @@
+/* This stylesheet file overrides the Streamlit built-in stylesheet
+
+/* File Uploader Container */
+div.css-8u98yl.exg6vvm0 {  
+    border: 1px solid;
+    border-color: white;    
+    border-radius: 8px;
+    background-color: white;    
+    padding: 3%;
+    box-shadow: 2px 3px 5px #bbbbbb;
+}
+
+/* File Upload Dropzone */
+section.css-po3vlj.exg6vvm15 {
+    border: 0px solid;
+    border-color: #cccccc;
+    background-color: white;
+}
+
+/* Camera Input Widget */
+div.row-widget.css-1a3it4f.ejtjsn29 {  
+    border: 0px;
+    border-color: white;
+    background-color: white;
+    border-radius: 8px;
+    padding: 3%;
+    box-shadow: 2px 3px 5px #bbbbbb;
+    overflow: auto;
+    object-fit: contain;
+}
+
+/* Video Container */
+div.css-piky02.ejtjsn28 {
+    border: 0px;    
+    border-color: white;  
+    background-color: transparent;
+    padding: 3%;
+    object-fit: contain;     
+}
+
+p {font-family: Arial, Helvetica, sans-serif;}
