@@ -17,7 +17,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.title('Powerball Number Analysis')
 
-df = pd.read_csv("powerball.csv")
+df = pd.read_csv("\powerball.csv")
 
 df1 = pd.DataFrame(df, columns = ['Draw Date', 'P1', 'P2', 'P3', 'P4', 'P5'])
 df2 = pd.DataFrame(df, columns = ['Draw Date', 'Powerball'])
