@@ -28,7 +28,7 @@ if symbol != '':
     try:
         data = requests.get(url).json()  
         st.title('StockTwits Sentiment Metric for')
-        st.title(data['symbol']['title'])
+        st.success(data['symbol']['title'])
 
         df = pd.DataFrame()     #Initialize blank data frame
 
