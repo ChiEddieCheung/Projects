@@ -3,7 +3,7 @@ import streamlit as st
 import yfinance as yf
 from datetime import datetime
 
-
+st.set_page_config(page_title="TV Tracker",layout = "wide",initial_sidebar_state="expanded")
 hide_menu = """
     <style>
         #MainMenu {Visibility: Hidden}
@@ -12,7 +12,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.set_page_config(page_title="TV Tracker",layout = "wide",initial_sidebar_state="expanded")
+
 
 ticker_Sym = st.sidebar.text_input('Enter a stock ticker:')
 ticker_Data = yf.Ticker(ticker_Sym)
