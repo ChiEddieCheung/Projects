@@ -3,7 +3,8 @@ import streamlit as st
 import yfinance as yf
 from datetime import datetime
 
-st.set_page_config(page_title="TV Tracker",layout="wide",initial_sidebar_state="auto")
+st.set_page_config(page_title="TV Tracker",layout="wide",initial_sidebar_state="expanded")
+
 hide_menu = """
     <style>
         #MainMenu {Visibility: Hidden}
