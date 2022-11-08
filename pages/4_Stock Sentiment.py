@@ -19,8 +19,8 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 #warnings.filterwarnings('ignore')
 
-st.sidebar.title('Stock Sentiment Metric')
 symbol = st.sidebar.text_input("Enter a stock ticker:", max_chars=5)
+st.sidebar.title('StockTwits Sentiment Metric for {symobol}')
 
 if symbol != '':
     url = 'https://api.stocktwits.com/api/2/streams/symbol/{}.json'.format(symbol)
