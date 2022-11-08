@@ -18,7 +18,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.title('Powerball Number Analysis')
 
-powerball_csv = Path(__file__).parents[1]
+powerball_csv = Path(__file__).parents[0]
 st.write(powerball_csv)
 df = pd.read_csv('app/projects/powerball.csv')
 
