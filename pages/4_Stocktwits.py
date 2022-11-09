@@ -18,10 +18,12 @@ st.title("StockTwits Latest Messages")
 symbol = ''
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 if symbol:
-    st.write('___')
     try:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json()    
+        
+        st.success(data['symbol']['title'])
+        st.write('___')
 
         for message in data['messages']:                 
             st.image(message['user']['avatar_url'])
