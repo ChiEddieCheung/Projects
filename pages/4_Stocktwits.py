@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import requests
 
-st.cache(suppress_st_warning=True)
+#st.cache(suppress_st_warning=True)
   
 hide_menu = """
     <style>
