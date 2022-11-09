@@ -3,7 +3,7 @@ import time
 
 st.set_page_config(
     page_title='Home Page',
-    initial_sidebar_state='expanded'
+    initial_sidebar_state='expanded',
     layout='wide'
 )
 
