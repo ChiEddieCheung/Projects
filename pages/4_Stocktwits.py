@@ -14,6 +14,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.title("StockTwits Latest Messages")
 
+symbol = ''
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 if symbol:
     st.write('___')
