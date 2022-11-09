@@ -4,6 +4,10 @@ import numpy as np
 import requests
 
 st.cache(suppress_st_warning=True)
+
+for key in st.session_state.keys():
+    del st.session_state[key]
+    
 hide_menu = """
     <style>
         #MainMenu {visibility: hidden;}
