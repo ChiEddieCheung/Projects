@@ -26,7 +26,7 @@ df = pd.read_csv('Powerball.csv')
 df1 = pd.DataFrame(df, columns = ['Draw Date', 'P1', 'P2', 'P3', 'P4', 'P5'])
 df2 = pd.DataFrame(df, columns = ['Draw Date', 'Powerball'])
 
-st.dataframe(df)
+st.dataframe(df, use_container_width=True)
 
 st.success('##### ' + 'Trending Patterns of Big 5 Numbers')
 st.line_chart(df1, x='Draw Date') 
