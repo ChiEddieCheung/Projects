@@ -15,7 +15,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.title('Main Menu')
+st.title('Eddie Cheung's Python Learning Project')
 st.info('#### \N{clipboard} On the left sidebar contains samples of apps written in Streamlit Python')
 
 with st.sidebar:
