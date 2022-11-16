@@ -29,9 +29,7 @@ class Company:
         overview_dict = si.get_quote_table(ticker)
         
         income_statement = si.get_income_statement(ticker)
-        #balance_sheet = si.get_balance_sheet(ticker)
-        #cash_flows = si.get_cash_flow(ticker)
-
+       
         self.year_end = overview_df.loc['Fiscal Year Ends'][0]        
         self.market_cap = (overview_dict['Market Cap'])
         self.market_cap_cs = format(str(self.market_cap))                
@@ -41,7 +39,7 @@ class Company:
         if 'n/a' in self.dividend_yield.lower():
             self.dividend_yield = 'N/A'
         else:
-            self.dividend_yield = '$'+ str(self.dividend_yield)
+            self.dividend_yield = '${}'.format(self.dividend_yield)
         
         self.sales = income_statement.loc['totalRevenue'][0]
         self.gross_profit = income_statement.loc['grossProfit'][0]
