@@ -21,6 +21,8 @@ hide_menu = """
         footer {visibility: hidden;}
 
         #footer {
+            background-color: Darkorange;
+            color: white;
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -28,9 +30,9 @@ hide_menu = """
         }
     </style>
     <body>
-        <#footer>
+        <footer id="footer">
             <p><i>Updated 11/07/2022</i></p>
-        <#/footer>
+        </footer>
     </body>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
