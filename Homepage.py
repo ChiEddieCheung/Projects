@@ -16,8 +16,9 @@ hide_menu = """
         footer:after {
             visibility: visible;
             content: 'Updated 11/17/2022';
-            display: block;           
-            background-color: DarkSalmon;
+            display: block;    
+            text-align: centered;
+            background-color: DarkOrange;
             color: white;
         }        
     </style>
