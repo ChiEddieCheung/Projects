@@ -10,7 +10,7 @@ st.set_page_config(
 hide_menu = """
     <style>                               
         #MainMenu {visibility: hidden;}                
-        footer {visibility: hidden;} 
+        footer {visibility: visible;} 
         footer:after{
             content:'Updated 11/17/2022';
             display:block;
