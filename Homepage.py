@@ -11,13 +11,12 @@ hide_menu = """
     <style>                               
         #MainMenu {visibility: hidden;}                
         footer {visibility: hidden;} 
-        #footer {
-            background-color: Darkorange;
-            color: white;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 2.5rem;
+        footer:after{
+            content:'Updated 11/17/2022';
+            display:block;
+            position:relative;
+            color:tomato;
+            padding: 5px;
         }
     </style>
     <body>
