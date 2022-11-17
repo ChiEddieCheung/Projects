@@ -15,8 +15,7 @@ hide_menu = """
             content:'Updated 11/17/2022';
             display:block;
             position:relative;
-            background-color: DarkOlive;
-            color:white;
+            
             padding: 5px;
         }
     </style>
