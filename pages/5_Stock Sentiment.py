@@ -18,7 +18,8 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.title('Stock Sentiment')
+st.subheader('Stock Sentiment')
+
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
 
