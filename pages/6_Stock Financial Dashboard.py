@@ -55,7 +55,8 @@ class Company:
             'Value':[self.gross_margin, self.operating_margin, self.net_margin]
             }    
 
-st.title('Financial Dashboard')
+st.subheader('Financial Dashboard')
+
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker})
 
@@ -64,8 +65,8 @@ if search or ticker:
         company = Company(ticker)                
         company.get_profit_margins()        
         
-        st.success('### ' + si.get_quote_data(ticker)['shortName'])
-        st.write('#### Company Overview')
+        st.success('#### ' + si.get_quote_data(ticker)['shortName'])
+        st.write('##### Company Overview')
 
         company_info = si.get_company_info(ticker)
         st.markdown(company_info.loc['longBusinessSummary'][0], 
