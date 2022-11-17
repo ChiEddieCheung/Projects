@@ -20,7 +20,7 @@ hide_menu = """
             background-color: Darkorange;
             color: white;
             position: absolute;
-            bottom: 5;
+            bottom: 500;
             width: 100%;
             height: 2.5rem;
         }
