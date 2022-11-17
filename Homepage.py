@@ -19,7 +19,7 @@ hide_menu = """
             font-style: italic;
             display: block;    
             text-align: center;
-            background: #ffcc00;
+            background: LemonChiffon;
             color: black;
         }        
     </style>
