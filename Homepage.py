@@ -9,11 +9,7 @@ st.set_page_config(
 
 hide_menu = """
     <style>
-        #page-container {
-            position: relative;
-            min-height: 100vh;
-        }
-        
+                
         #content-wrap {padding-bottom: 2.5rem;}
         
         #MainMenu {visibility: hidden;}
