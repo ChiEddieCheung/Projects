@@ -16,7 +16,7 @@ st.set_page_config(
 )
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.title('Powerball Number Analysis')
+st.subheader('Powerball Number Analysis')
 
 #powerball_csv = Path(__file__).parents[1]
 #st.write(powerball_csv)
