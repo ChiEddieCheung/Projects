@@ -15,15 +15,11 @@ hide_menu = """
             content:'Updated 11/17/2022';
             display:block;
             position:relative;
-            color:tomato;
+            background-color: DarkOlive;
+            color:white;
             padding: 5px;
         }
     </style>
-    <body>
-        <footer id="footer">
-            <p><i>Updated 11/07/2022</i></p>
-        </footer>
-    </body>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
