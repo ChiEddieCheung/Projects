@@ -15,10 +15,12 @@ hide_menu = """
         }
         footer:after {
             visibility: visible;
-            content: '* Updated 11/17/2022 *';
+            content: 'Updated 11/17/2022';
+            font-style: italic;
             display: block;    
             text-align: center;
             background-color: #ffcc00;
+            background: lightyellow;
             color: black;
         }        
     </style>
