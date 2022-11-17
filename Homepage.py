@@ -9,10 +9,8 @@ st.set_page_config(
 
 hide_menu = """
     <style>                               
-        #MainMenu {visibility: hidden;}
-                
-        .reportview-container footer {visibility: hidden;} 
-
+        #MainMenu {visibility: hidden;}                
+        footer {visibility: hidden;} 
         #footer {
             background-color: Darkorange;
             color: white;
