@@ -11,7 +11,7 @@ hide_menu = """
     <style>                               
         #MainMenu {visibility: hidden;}
                 
-        .reportview-container .main footer {visibility: hidden;} 
+        .reportview-container footer {visibility: hidden;} 
 
         #footer {
             background-color: Darkorange;
