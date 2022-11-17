@@ -12,7 +12,7 @@ hide_menu = """
         #MainMenu {visibility: hidden;}
         footer {visibility: visible;                
                 padding: 3px;
-                background-color: DarkSalmon;
+                background-color: DarkOliveGreen;
                 color: white;}
     </style>
     <body>
