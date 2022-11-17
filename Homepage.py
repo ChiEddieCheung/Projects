@@ -18,7 +18,7 @@ hide_menu = """
         
         #MainMenu {visibility: hidden;}
         
-        footer {visibility: hidden;}
+        footer {visibility: visible;}
 
         #footer {
             background-color: Darkorange;
