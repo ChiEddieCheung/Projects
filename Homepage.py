@@ -28,9 +28,9 @@ hide_menu = """
         }
     </style>
     <body>
-        <footer>
+        <#footer>
             <p><i>Updated 11/07/2022</i></p>
-        </footer>
+        <#/footer>
     </body>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
