@@ -32,7 +32,8 @@ class Company:
        
         self.year_end = overview_df.loc['Fiscal Year Ends'][0]        
         self.market_cap = (overview_dict['Market Cap'])
-        self.market_cap_cs = format(str(self.market_cap))                
+        self.market_cap = '${}'.format(self.market_cap)
+        
         self.prices = price_df['adjclose']
         self.price_earnings_ratio = overview_dict['PE Ratio (TTM)']
         self.dividend_yield = overview_dict['Forward Dividend & Yield']
