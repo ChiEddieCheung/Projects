@@ -18,7 +18,7 @@ hide_menu = """
             content: 'Updated 11/17/2022';
             display: block;    
             text-align: center;
-            background-color: DarkOrchid;
+            background-color: tomato;
             color: white;
         }        
     </style>
