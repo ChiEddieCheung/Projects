@@ -18,7 +18,7 @@ hide_menu = """
         
         #MainMenu {visibility: hidden;}
         
-        footer {visibility: visible;}
+        footer {visibility: hidden;}
 
         #footer {
             position: absolute;
