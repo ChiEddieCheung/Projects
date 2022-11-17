@@ -17,8 +17,8 @@ hide_menu = """
             visibility: visible;
             content: 'Updated 11/17/2022';
             display: block;    
-            text-align: centered;
-            background-color: DarkOrange;
+            text-align: center;
+            background-color: DarkOrchid;
             color: white;
         }        
     </style>
