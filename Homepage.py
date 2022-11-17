@@ -10,7 +10,7 @@ st.set_page_config(
 hide_menu = """
     <style>
         #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;}
+        footer {visibility: visible;}
     </style>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
