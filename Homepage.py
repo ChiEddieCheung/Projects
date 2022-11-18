@@ -10,7 +10,7 @@ st.set_page_config(
 hide_menu = """
     <style>                               
         #MainMenu {visibility: hidden;}                
-       .css-qri22k.egzxvld0 {
+        footer {
             visibility: hidden;
         }
         footer:after {
