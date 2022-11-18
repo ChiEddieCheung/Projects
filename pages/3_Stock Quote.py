@@ -16,7 +16,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.subheader('Stock Price and Volume Charts')
+st.write('#### Stock Price and Volume Charts')
 st.write('___')
 
 ticker_sym = st.text_input('Enter a stock ticker:', max_chars=5)
