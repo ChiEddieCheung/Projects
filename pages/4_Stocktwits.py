@@ -18,7 +18,8 @@ st.write('___')
 
 symbol = ''
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
-if symbol:
+search = st.button('Search', key={symbol})
+if symbol or search:
     try:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json()    
