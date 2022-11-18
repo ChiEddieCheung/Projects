@@ -24,8 +24,6 @@ hide_menu = """
             color: black;
             padding: 5px;
             height: 35px;
-            border-radius: 8px;
-            border: 1px solid lightblue;
         }   
     </style>
 """
