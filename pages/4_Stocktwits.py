@@ -13,7 +13,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.subheader("StockTwits Latest Messages")
+st.write('#### StockTwits Latest Messages')
 st.write('___')
 
 symbol = ''
