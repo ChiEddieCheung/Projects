@@ -15,14 +15,16 @@ hide_menu = """
         }
         footer:after {
             visibility: visible;
-            content: 'Updated 11/17/2022';
+            content: "Updated 11/17/2022 -
+ My Bio 
+url('https://my.indeed.com/p/chichiueddiec-5mgjx37')"
             font-style: italic;
             display: block;    
             text-align: center;
             background: LemonChiffon;
             color: black;
             padding: 5px;
-            height: 36px;
+            height: 35px;
         }        
     </style>
 """
