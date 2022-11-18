@@ -21,6 +21,8 @@ hide_menu = """
             text-align: center;
             background: LemonChiffon;
             color: black;
+            padding: 5px;
+            height: 200px;
         }        
     </style>
 """
