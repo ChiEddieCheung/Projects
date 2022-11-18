@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-#import streamlit.components.v1 as components
+import streamlit.components.v1 as components
 
 st.set_page_config(
     page_title='Home Page',
