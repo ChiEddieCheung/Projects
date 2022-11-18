@@ -15,7 +15,7 @@ hide_menu = """
         }
         footer:after {
             visibility: visible;
-            content: 'My bio'
+            content: 'My bio url(https://my.indeed.com/p/chichiueddiec-5mgjx37)';
             font-style: italic;
             display: block;    
             text-align: center;
