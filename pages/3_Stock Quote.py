@@ -17,6 +17,8 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.subheader('Stock Price and Volume Charts')
+st.write('___')
+
 ticker_sym = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker_sym})
 ticker_Data = yf.Ticker(ticker_sym)
