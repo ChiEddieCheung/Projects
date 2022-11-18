@@ -22,7 +22,7 @@ hide_menu = """
             background: LemonChiffon;
             color: black;
             padding: 5px;
-            height: 40px;
+            height: 36px;
         }        
     </style>
 """
