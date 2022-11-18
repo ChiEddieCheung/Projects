@@ -29,6 +29,8 @@ hide_menu = """
             border: 2px solid #73AD21;
         }   
     </style>
+    <body>
+    </body>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
