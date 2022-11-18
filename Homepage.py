@@ -20,10 +20,11 @@ hide_menu = """
             font-style: italic;
             display: block;    
             text-align: center;
-            background: Tomato;
             color: black;
             padding: 5px;
             height: 35px;
+            border-radius: 5px;
+            border: 2px solid #73AD21;
         }   
     </style>
 """
