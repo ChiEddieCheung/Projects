@@ -25,7 +25,7 @@ if symbol:
         
         st.success(data['symbol']['title'])        
 
-        for message in data['messages']:                 
+        for message in data['messages']:                  
             st.image(message['user']['avatar_url'])
             st.write(message['user']['username'])        
             st.write(message['created_at'])
