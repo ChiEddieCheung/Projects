@@ -24,9 +24,11 @@ hide_menu = """
             padding: 5px;
             height: 35px;
         }     
-        footer:after:after {
+        footer:before {
             visibility: visible;
             content: 'Test';
+            display: block;
+            height: 35px;
         }   
     </style>
 """
