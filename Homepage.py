@@ -15,7 +15,7 @@ hide_menu = """
         }
         footer:after {
             visibility: visible;
-            content: 'My bio' url(https://my.indeed.com/p/chichiueddiec-5mgjx37)';
+            content: 'Updated 11/17/2022';
             font-style: italic;
             display: block;    
             text-align: center;
@@ -23,7 +23,11 @@ hide_menu = """
             color: black;
             padding: 5px;
             height: 35px;
-        }        
+        }     
+        footer:after:after {
+            visibility: visible;
+            content: 'Test';
+        }   
     </style>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
