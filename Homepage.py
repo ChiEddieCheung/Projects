@@ -20,7 +20,7 @@ hide_menu = """
             font-style: italic;
             display: block;    
             text-align: center;
-            background: LemonChiffon;
+            background: Tomato;
             color: black;
             padding: 5px;
             height: 35px;
