@@ -14,6 +14,7 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.subheader("StockTwits Latest Messages")
+st.write('___')
 
 symbol = ''
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
@@ -22,8 +23,7 @@ if symbol:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json()    
         
-        st.success(data['symbol']['title'])
-        st.write('___')
+        st.success(data['symbol']['title'])        
 
         for message in data['messages']:                 
             st.image(message['user']['avatar_url'])
