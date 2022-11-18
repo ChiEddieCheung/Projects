@@ -10,7 +10,7 @@ st.set_page_config(
 
 hide_menu = """
     <style>   
-        body {background-color: white;}
+        .container {background-color: white;}
                             
         #MainMenu {visibility: hidden;}                
         footer {
@@ -29,8 +29,6 @@ hide_menu = """
             border: 2px solid #73AD21;
         }   
     </style>
-    <body>
-    </body>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
