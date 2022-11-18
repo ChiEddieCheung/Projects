@@ -16,7 +16,8 @@ st.set_page_config(
 )
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.subheader('Powerball Number Analysis')
+st.write('#### Powerball Number Analysis')
+st.write('___')
 
 #powerball_csv = Path(__file__).parents[1]
 #st.write(powerball_csv)
@@ -28,8 +29,8 @@ df2 = pd.DataFrame(df, columns = ['Draw Date', 'Powerball'])
 
 st.dataframe(df, use_container_width=True)
 
-st.success('##### ' + 'Trending Patterns of Big 5 Numbers')
+st.success('###### ' + 'Trending Patterns of Big 5 Numbers')
 st.line_chart(df1, x='Draw Date') 
 
-st.success('##### Trending Pattern of Powerball')
+st.success('###### Trending Pattern of Powerball')
 st.line_chart(df2, x='Draw Date')
