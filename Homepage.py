@@ -32,5 +32,5 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 st.subheader("Eddie Cheung's Python Learning Project")
 st.info('##### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
 
-st.success("##### \N{magnifying glass tilted right} [Feel free to check out my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37)")
+st.success("##### \N{magnifying glass} [Feel free to check out my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37)")
     #components.iframe("https://docs.streamlit.io/en/latest", scrolling=True)
