@@ -1,6 +1,5 @@
 import streamlit as st
 import time
-import streamlit.components.v1 as components
 
 st.set_page_config(
     page_title='Home Page',
@@ -32,5 +31,4 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 st.subheader("Eddie Cheung's Python Learning Project")
 st.write('___')
 st.info('##### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
-#st.success("##### \N{pushpin} [Feel free to check out my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37)")
-components.iframe("https://my.indeed.com/p/chichiueddiec-5mgjx37", height=300, scrolling=True)
+st.success("##### \N{pushpin} [Feel free to check out my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37)")
