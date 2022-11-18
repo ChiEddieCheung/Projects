@@ -19,7 +19,8 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 url = 'http://api.tvmaze.com/singlesearch/shows'
 
-st.subheader('TV Show Lookup')
+st.write('#### TV Show Lookup')
+st.write('___')
 show_name = st.text_input('Enter a TV Show name:')
 if show_name != '':
     try:
