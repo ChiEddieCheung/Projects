@@ -9,9 +9,7 @@ st.set_page_config(
 )
 
 hide_menu = """
-    <style>   
-        .container {background-color: white;}
-                            
+    <style>               
         #MainMenu {visibility: hidden;}                
         footer {
             visibility: hidden;
@@ -22,6 +20,7 @@ hide_menu = """
             font-style: italic;
             display: block;    
             text-align: center;
+            opacity: 0;
             color: black;
             padding: 5px;
             height: 35px;
