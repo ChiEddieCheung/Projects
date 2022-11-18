@@ -18,7 +18,8 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.subheader('Stock Sentiment')
+st.write('#### Stock Sentiment')
+st.write('___')
 
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
@@ -29,7 +30,7 @@ if search == True or symbol != '':
     try:
         data = requests.get(url).json()  
 
-        st.success(data['symbol']['title'])
+        st.info(f("##### {data['symbol']['title']}")
 
         df = pd.DataFrame()     #Initialize blank data frame        
 
