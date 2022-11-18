@@ -10,7 +10,7 @@ st.set_page_config(
 
 hide_menu = """
     <style>   
-        body {background: white}
+        body {background-color: white;}
                             
         #MainMenu {visibility: hidden;}                
         footer {
