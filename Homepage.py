@@ -15,9 +15,7 @@ hide_menu = """
         }
         footer:after {
             visibility: visible;
-            content: "Updated 11/17/2022 -
- My Bio 
-url('https://my.indeed.com/p/chichiueddiec-5mgjx37')"
+            content: "url(https://my.indeed.com/p/chichiueddiec-5mgjx37)"
             font-style: italic;
             display: block;    
             text-align: center;
