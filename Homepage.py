@@ -29,6 +29,6 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.subheader("Eddie Cheung's Python Learning Project")
-st.write('___')
+st.markdown("""---""")
 st.info('##### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
 st.success("##### \N{pushpin} [Feel free to check out my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37)")
