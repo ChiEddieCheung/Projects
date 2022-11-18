@@ -30,7 +30,7 @@ if search == True or symbol != '':
     try:
         data = requests.get(url).json()  
 
-        st.info(f("##### {data['symbol']['title']}")
+        st.info(f"##### {data['symbol']['title']}")
 
         df = pd.DataFrame()     #Initialize blank data frame        
 
