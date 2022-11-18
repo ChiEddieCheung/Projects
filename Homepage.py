@@ -27,10 +27,14 @@ hide_menu = """
         footer:before {
             visibility: visible;
             content: 'Test';
+            text-align: center;
             display: block;
-            height: 35px;
+            height: 20px;
         }   
     </style>
+    <footer>
+      <a href="">A link</a>
+    </footer>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
