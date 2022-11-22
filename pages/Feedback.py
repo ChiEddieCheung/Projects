@@ -14,7 +14,7 @@ try:
     conn = sqlite3.connect('projects/pages/data.db')
     c = conn.cursor()
 except:
-    st.error('Database error')
+    st.warning(st.exception)
 
 def create_table():
     c.execute('CREATE TABLE IF NOT EXISTS blogtable(author TEXT,title TEXT,article TEXT,postdate,DATE)')
