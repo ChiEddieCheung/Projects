@@ -11,7 +11,7 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 try:
-    conn = sqlite3.connect('pages/data.db')
+    conn = sqlite3.connect('data.db')
     c = conn.cursor()
 except:
     st.warning(st.exception)
