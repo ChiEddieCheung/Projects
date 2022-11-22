@@ -10,7 +10,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-conn = sqlite3.connect('https://db4s.dbhub.io:5550/db_plugsite/data.db?commit=1c77461160863b88b342b0f740753bad20bf68847b729dfed118f93e21319964&branch=master')
+conn = sqlite3.connect('https://db4s.dbhub.io:5550/db_plugsite/data.db')
 c = conn.cursor()
 
 def create_table():
