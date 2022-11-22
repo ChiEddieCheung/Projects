@@ -10,11 +10,8 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-try:
-    conn = sqlite3.connect('data.db')
-    c = conn.cursor()
-except:
-    st.warning(st.exception)
+conn = sqlite3.connect('pages/data.db')
+c = conn.cursor()
 
 def create_table():
     c.execute('CREATE TABLE IF NOT EXISTS blogtable(author TEXT,title TEXT,article TEXT,postdate,DATE)')
