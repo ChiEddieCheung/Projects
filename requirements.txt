@@ -6,4 +6,4 @@ yahoo_fin==0.8.9.1
 yfinance==0.1.77
 matplotlib==3.6.2
 wordcloud==1.8.2.2
-mysql_connector_python==8.0.17
+mysql-connector-python==8.0.17
