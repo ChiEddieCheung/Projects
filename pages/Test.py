@@ -2,10 +2,10 @@ import streamlit as st
 import mysql.connector as mqc
 
 #@st.experimental_singleton
-#def init_connection():
-#    return mqc.connect(**st.secrets["mysql"])
+def init_connection():
+    return mqc.connect(**st.secrets.mysql)
 
-#conn = init_connection()
+conn = init_connection()
 
 #@st.experimental_memo(ttl=600)
 #def run_query(query):
