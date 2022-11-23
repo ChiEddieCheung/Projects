@@ -24,7 +24,7 @@ def add_data(author,title,article,postdate):
     conn.commit()
 
 html_temp = """
-    <div style="background-color:{};padding:5px;border-radius:8px">
+    <div style="background-color:{};border-radius:8px">
     <h1 style="color:{};text-align: center;font-size: 28px">Feedback Form</h1>
     </div><br>
 """
