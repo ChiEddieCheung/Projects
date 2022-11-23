@@ -3,7 +3,6 @@ import yahoo_fin.stock_info as si
 import pandas as pd
 import streamlit as st
 import datetime as dt
-import nums_from_string as nfs
 
 st.set_page_config(
     page_title="Financial Dashboard",
