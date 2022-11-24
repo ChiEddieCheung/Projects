@@ -27,7 +27,7 @@ html_temp = """
 """
 st.markdown(html_temp.format('lightblue','black'),unsafe_allow_html=True)
 
-st.write("###### *Please leave any comment or idea on our feedback form.*")
+st.write("###### *Please leave any comment or idea on my feedback form.*")
 st.write('###### *Your feedback is very important to me!*')
 #create_table()
 
