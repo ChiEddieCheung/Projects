@@ -4,7 +4,7 @@ import yfinance as yf
 from datetime import datetime
 
 st.set_page_config(
-    page_title="TV Tracker",
+    page_title="Stock Quote",
     layout = "wide"    
 )
 
