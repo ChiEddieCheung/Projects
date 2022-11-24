@@ -43,3 +43,5 @@ with st.form('myForm', clear_on_submit=True):
     if submit_button:
         add_data(blog_author,blog_title,blog_article,blog_post_date)
         st.success("Post: '{}' is saved".format(blog_title))
+        c.close()
+        conn.close()
