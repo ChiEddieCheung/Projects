@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 import mysql.connector as mqc
 
+st.set_page_config(
+    page_title="Feedback Form",
+    layout = "wide",    
+)
+
 hide_menu = """
     <style>
         #MainMenu {visibility: hidden;}
