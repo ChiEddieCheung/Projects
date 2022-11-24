@@ -5,7 +5,7 @@ import requests
 
 #st.cache(suppress_st_warning=True)
 st.set_page_config(
-    page_title="Stocktwits",
+    page_title="Stocktwits Latest Messages",
     layout = "wide",    
 )
   
