@@ -32,7 +32,6 @@ st.markdown(html_temp.format('lightblue','black'),unsafe_allow_html=True)
 
 st.write("###### *Please leave any comment or idea on our feedback form.*")
 st.write('###### *Your feedback is very important to me!*')
-create_table()
 
 with st.form('myForm', clear_on_submit=True):
     blog_title = st.text_input('Enter Your Topic:')
