@@ -4,6 +4,10 @@ import numpy as np
 import requests
 
 #st.cache(suppress_st_warning=True)
+st.set_page_config(
+    page_title="Stocktwits",
+    layout = "wide",    
+)
   
 hide_menu = """
     <style>
