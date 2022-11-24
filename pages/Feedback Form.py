@@ -36,9 +36,9 @@ with st.form('myForm', clear_on_submit=True):
     c = conn.cursor()
     
     blog_title = st.text_input('Enter Your Topic:')
-    blog_author = st.text_input("Enter Your Name (or Email)",max_chars=50)
+    blog_author = st.text_input("Enter Your Name (or Email):",max_chars=50)
     blog_article = st.text_area("Enter Your Feedback:",height=200)
-    blog_post_date = st.date_input("Post Date")
+    blog_post_date = st.date_input("Post Date:")
     submit_button = st.form_submit_button('Add')    
     if submit_button:
         add_data(blog_author,blog_title,blog_article,blog_post_date)
