@@ -21,7 +21,7 @@ url = 'http://api.tvmaze.com/singlesearch/shows'
 
 st.write('#### TV Show Lookup')
 st.write('___')
-show_name = st.text_input('Enter a TV Show name:')
+show_name = st.text_input('Enter a TV show name:')
 search = st.button('Search', key={show_name})
 if show_name != '' or search:
     try:
