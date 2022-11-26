@@ -14,7 +14,7 @@ hide_menu = """
         #MainMenu {Visibility: Hidden}
         footer {Visibility: Hidden}
     </style>
-"""
+"""#
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.write('#### Stock Sentiment')
@@ -37,7 +37,8 @@ if search == True or symbol != '':
             if i < 30:
                 msg = data['messages'][i]            
                 
-                followers = f"{msg['user']} {msg['user']['followers']}"
+                #followers = f"{msg['user']} {msg['user']['followers']}"
+                followers = msg['user']
                 try:
                     sentiment = msg['entities']['sentiment']['basic']
                 except:
