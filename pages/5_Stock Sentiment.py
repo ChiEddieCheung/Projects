@@ -20,8 +20,8 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 st.write('#### Stock Sentiment')
 st.write('___')
 
-def HiLightCells(val):
-    color='yellow' if val > 1000 else ''
+def HiLightCells():
+    color='yellow'
     return 'background-color: {}'.format(color)
 
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
