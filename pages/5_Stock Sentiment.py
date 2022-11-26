@@ -57,6 +57,7 @@ if search == True or symbol != '':
     
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
+        df = df.style.applymap(HiLightCells)
         st.dataframe(df)
     except:
         st.write('\N{cross mark} Stock ticker not found!')
