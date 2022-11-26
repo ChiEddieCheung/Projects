@@ -57,6 +57,6 @@ if search == True or symbol != '':
     
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
-        st.dataframe(df.style.applymap(HiLightCells), subset=['Followers'])
+        st.dataframe(df.style.applymap(HiLightCells))
     except:
         st.write('\N{cross mark} Stock ticker not found!')
