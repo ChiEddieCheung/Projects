@@ -30,7 +30,7 @@ search = st.button('Search', key={symbol})
 if search == True or symbol != '':
     url = 'https://api.stocktwits.com/api/2/streams/symbol/{}.json'.format(symbol)
     
-    #try:
+    try:
         data = requests.get(url).json()  
 
         st.info(f"##### {data['symbol']['title']}")
@@ -59,5 +59,6 @@ if search == True or symbol != '':
         df = df.reset_index().drop(['index'], axis=1)
         df = df.style.applymap(HiLightCells)
         st.dataframe(df)
-    #except:
+    except:
         #st.write('\N{cross mark} Stock ticker not found!')
+        st.write(st.exception)
