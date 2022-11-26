@@ -65,7 +65,7 @@ if search == True or symbol != '':
             if int(value) > 1000:
                 return highlight
             
-        st.dataframe(df2.style.applymap(colorCell, subset=['Followers']), use_container_width=True)
+        st.dataframe(df2.style.applymap(color_cell, subset=['Followers']), use_container_width=True)
         
     except:
         st.write('\N{cross mark} Stock ticker not found!')
