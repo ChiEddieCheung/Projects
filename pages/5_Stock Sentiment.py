@@ -37,8 +37,8 @@ if search == True or symbol != '':
             if i < 30:
                 msg = data['messages'][i]            
                 
-                #followers = f"{msg['user']} {msg['user']['followers']}"
-                followers = msg['user']
+                followers = f"{msg['user']['username']} has {msg['user']['followers']}"
+                
                 try:
                     sentiment = msg['entities']['sentiment']['basic']
                 except:
