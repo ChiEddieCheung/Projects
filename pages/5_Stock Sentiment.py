@@ -57,7 +57,7 @@ if search == True or symbol != '':
         #df.style.applymap(HiLightCells, subset=['followers'])
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
-        df.style.applymap(HiLightCells)
+        df.style.applymap('background-color:yellow;')
         st.write(df, unsafe_allow_html=True)
     except:
         st.write('\N{cross mark} Stock ticker not found!')
