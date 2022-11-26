@@ -8,6 +8,7 @@ def colorCell(val):
     if val > 1000:
         color='yellow'
     return f'background-color:{color}'
+    
 st.set_page_config(
     page_title="Stock Sentiment",
     layout = "wide",    
@@ -57,7 +58,7 @@ if search == True or symbol != '':
     
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
-        st.dataframe(df.style.applymap(colorCell, subset=['Followers']))
+        st.dataframe(df)
         
     except:
         st.write('\N{cross mark} Stock ticker not found!')
