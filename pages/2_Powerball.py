@@ -11,7 +11,7 @@ hide_menu = """
 
 st.set_page_config(
     page_title="Powerball Number Analysis",
-    layout = wide
+    layout = "wide"
 )
 st.markdown(hide_menu, unsafe_allow_html=True)
 
