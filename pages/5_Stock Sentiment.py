@@ -4,6 +4,10 @@ import numpy as np
 import requests
 import warnings
 
+def colorCell(val):
+    if val > 1000:
+        color='yellow'
+    return f'background-color:{color}'
 st.set_page_config(
     page_title="Stock Sentiment",
     layout = "wide",    
@@ -19,11 +23,6 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.write('#### Stock Sentiment')
 st.write('___')
-
-def HiLightCells(val):
-    if val > 1000:
-        color='yellow'
-    return f'background-color: {color}'
 
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
@@ -58,7 +57,7 @@ if search == True or symbol != '':
     
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
-        st.dataframe(df.style.applymap(HiLightCells, subset=['followers']))
+        st.dataframe(df.style.applymap(colorCell, subset=['Followers']))
         
     except:
         st.write('\N{cross mark} Stock ticker not found!')
