@@ -4,7 +4,7 @@ import mysql.connector as mqc
 
 st.set_page_config(
     page_title="Feedback Form",
-    layout = "wide",    
+    layout = "wide"
 )
 
 hide_menu = """
