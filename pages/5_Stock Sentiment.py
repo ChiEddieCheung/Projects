@@ -20,9 +20,9 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 st.write('#### Stock Sentiment')
 st.write('___')
 
-def HiLightCells():
-    color='yellow'
-    return 'background-color: {}'.format(color)
+def HiLightCells(val):
+    color='yellow' if val > 1000
+    return f'background-color: {color}'
 
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
@@ -57,6 +57,6 @@ if search == True or symbol != '':
     
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
-        st.dataframe(df.style.applymap(HiLightCells))
+        st.dataframe(df.style.applymap(HiLightCells), subset=['Followers']))
     except:
         st.write('\N{cross mark} Stock ticker not found!')
