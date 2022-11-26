@@ -57,7 +57,7 @@ if search == True or symbol != '':
     
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
-        df.style.applymap(Hilightcells)
+        df.style.applymap(HiLightCells)
         st.write(df)
         
     except:
