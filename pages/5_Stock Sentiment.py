@@ -58,6 +58,10 @@ if search == True or symbol != '':
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
         
+        checked = st.checkbox("Check to exclude 'Neutral' sentiment')
+        if checked:
+            df = df.query('Sentiment != "Neutral"')
+        
         def color_cell(value):            
             highlight = 'background-color: #ffdd00;'            
             if int(value) > 1000:
