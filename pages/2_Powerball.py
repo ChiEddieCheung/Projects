@@ -27,7 +27,8 @@ df = pd.read_csv('Powerball.csv')
 df1 = pd.DataFrame(df, columns = ['Draw Date', 'P1', 'P2', 'P3', 'P4', 'P5'])
 df2 = pd.DataFrame(df, columns = ['Draw Date', 'Powerball'])
 
-with st.checkbox('Check to display data table:'):
+checked = st.checkbox('Check to display data table:')
+if checked:
     st.dataframe(df, use_container_width=True)
 
 st.info('##### ' + 'Trending Patterns of Big 5 Numbers')
