@@ -57,8 +57,8 @@ if search == True or symbol != '':
         df = df.rename(columns = {0:'Date Created', 1:'Twitter Name', 2:'Followers', 3:'Sentiment'})
     
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
-        #df = df.reset_index().drop(['index'], axis=1)
-        st.dataframe(df.style.applymap(HiLightCells, subset=['Followers']))
+        df = df.reset_index().drop(['index'], axis=1)
+        st.dataframe(df.style.applymap(HiLightCells, subset=['followers']))
         
     except:
         st.write('\N{cross mark} Stock ticker not found!')
