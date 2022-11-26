@@ -54,9 +54,7 @@ if search == True or symbol != '':
                 
                 df = df.append(pd.DataFrame(row).T)
             
-        df = df.rename(columns = {0:'Date Created', 1:'Twitter Name', 2:'Followers', 3:'Sentiment'})
-        df2 = df
-        
+        df = df.rename(columns = {0:'Date Created', 1:'Twitter Name', 2:'Followers', 3:'Sentiment'})        
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
         
@@ -65,7 +63,6 @@ if search == True or symbol != '':
             if int(value) > 1000:
                 return highlight
             
-        st.dataframe(df2.style.applymap(color_cell, subset=['Followers']), use_container_width=True)
-        
+        st.dataframe(df.style.applymap(color_cell, subset=['Followers']), use_container_width=True)        
     except:
         st.write('\N{cross mark} Stock ticker not found!')
