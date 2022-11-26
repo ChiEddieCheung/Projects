@@ -21,7 +21,7 @@ st.write('#### Stock Sentiment')
 st.write('___')
 
 def HiLightCells(val):
-    color='yellow' if val > 1000
+    color='yellow' if val > 1000:
     return f'background-color: {color}'
 
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
