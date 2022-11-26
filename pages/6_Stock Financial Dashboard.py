@@ -6,8 +6,7 @@ import datetime as dt
 
 st.set_page_config(
     page_title="Financial Dashboard",
-    layout = "wide",
-    initial_sidebar_state="expanded"
+    layout = "wide"
 )
 
 hide_menu = """
