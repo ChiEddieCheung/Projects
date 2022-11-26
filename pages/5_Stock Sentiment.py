@@ -20,6 +20,10 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 st.write('#### Stock Sentiment')
 st.write('___')
 
+def HiLightCells(val):
+    color='yellow' if val > 1000 else ''
+    return 'background-color: {}'.format(color)
+
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
 
@@ -50,6 +54,7 @@ if search == True or symbol != '':
                 df = df.append(pd.DataFrame(row).T)
             
         df = df.rename(columns = {0:'Date Created', 1:'Twitter Name', 2:'Followers', 3:'Sentiment'})
+        df.style.applymap(HiLightCells, subset=['Followes'])
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
         st.dataframe(df, use_container_width=True)
