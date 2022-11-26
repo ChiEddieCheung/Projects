@@ -6,7 +6,6 @@ import json
 st.set_page_config(
     page_title="TV Show",
     layout = "wide",
-    initial_sidebar_state="expanded"    
 )
 
 hide_menu = """
