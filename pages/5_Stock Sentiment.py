@@ -36,20 +36,20 @@ if search == True or symbol != '':
         for i in range(0, len(data['messages'])):
             if i < 30:
                 msg = data['messages'][i]            
-                
-                followers = f"{msg['user']['username']} has {msg['user']['followers']}"
-                
+                twitter = msg['user']['username']
+                #followers = f"{msg['user']['username']} has {msg['user']['followers']}"
+                followers = msg['user']['followers']
                 try:
                     sentiment = msg['entities']['sentiment']['basic']
                 except:
                     sentiment = 'Neutral'            
                 date_created = msg['created_at']
 
-                row = np.asarray([date_created, followers, sentiment])
-                #row_df = pd.DataFrame(columns= ['Date Created', 'Followers', 'Sentiment'])
+                row = np.asarray([date_created, twitter, followers, sentiment])
+                
                 df = df.append(pd.DataFrame(row).T)
             
-        df = df.rename(columns = {0:'Date Created', 1:'Followers', 2:'Sentiment'})
+        df = df.rename(columns = {0:'Date Created', 1:'Twitter Name', 2:'Followers', 3:'Sentiment'})
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
         st.dataframe(df, use_container_width=True)
