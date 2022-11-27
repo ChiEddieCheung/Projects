@@ -28,6 +28,5 @@ st.markdown(
 )
 placeholder = st.empty()
 components.iframe("https://www.ebay.com/itm/403908078579?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=hd1-ldmkqjm&sssrc=2051273&ssuid=hd1-ldmkqjm&var=&widget_ver=artemis&media=MORE", width = 1500, height = 800, scrolling = True)
-)
 
 components.iframe("https://docs.streamlit.io/en/latest")
