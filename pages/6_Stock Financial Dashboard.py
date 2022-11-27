@@ -38,6 +38,7 @@ class Company:
         val1 = temp[:-1]
         val1 = val1[:-1]
         val1 = '${}'.format(val1)
+        val1 = str(val1)
         val2 = temp[-1]
 
         st.write(val1)
