@@ -85,7 +85,7 @@ if search or ticker:
         with col2:
             with st.expander('Profit margins (as of {})'.format(company.year_end), expanded=1):
                 profit_margin_index = ['Gross margin', 'Operating margin', 'Net margin']
-                profit_margin = {'Value':[company.gross_margin, company.operating_margin, company.net_margin]}
+                profit_margin = [company.gross_margin, company.operating_margin, company.net_margin]
                 
                 profit_margin_df = pd.DataFrame(profit_margin, index = profit_margin_index)
                 st.table(profit_margin_df)
