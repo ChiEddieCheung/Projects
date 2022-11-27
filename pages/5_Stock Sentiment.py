@@ -37,7 +37,7 @@ if search == True or symbol != '':
         st.info(f"##### {data['symbol']['title']}")
 
         df = pd.DataFrame()     #Initialize blank data frame        
-        st.write(data['messages'])
+    
         for i in range(0, len(data['messages'])):
             if i < 30:
                 msg = data['messages'][i]            
