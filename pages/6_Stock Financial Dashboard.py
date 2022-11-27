@@ -25,12 +25,13 @@ class Company:
         overview_df = si.get_stats(ticker)
         overview_df = overview_df.set_index('Attribute')
         overview_dict = si.get_quote_table(ticker)
-        st.write(overview_dict)
+        #st.write(overview_dict)
         
         income_statement = si.get_income_statement(ticker)
        
         self.year_end = overview_df.loc['Fiscal Year Ends'][0]        
         self.market_cap = overview_dict['Market Cap']
+        self.market_cap = '{$:}'.format(self.market_cap)
         
         self.prices = price_df['adjclose']
         self.price_earnings_ratio = overview_dict['PE Ratio (TTM)']
