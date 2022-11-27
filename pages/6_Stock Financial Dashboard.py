@@ -41,7 +41,7 @@ class Company:
         
         # Method 2
         temp = self.market_cap
-        val = temp[:.2]
+        val = temp[:2]
         #val = val[:-1]
         val = f'${val}{temp[-1]}'
         st.write(val)
