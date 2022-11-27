@@ -42,7 +42,7 @@ class Company:
         self.sales = income_statement.loc['totalRevenue'][0]
         self.gross_profit = income_statement.loc['grossProfit'][0]
         self.ebit = income_statement.loc['ebit'][0]
-        self.interest = - income_statement.loc['interestExpense'][0]
+        self.interest = income_statement.loc['interestExpense'][0]
         self.net_profit = income_statement.loc['netIncome'][0]
      
     def get_profit_margins(self):
