@@ -29,8 +29,7 @@ class Company:
         income_statement = si.get_income_statement(ticker)
        
         self.year_end = overview_df.loc['Fiscal Year Ends'][0]        
-        self.market_cap = (overview_dict['Market Cap'])
-        #self.market_cap = format(self.market_cap)
+        self.market_cap = overview_dict['Market Cap']
         
         self.prices = price_df['adjclose']
         self.price_earnings_ratio = overview_dict['PE Ratio (TTM)']
@@ -85,12 +84,12 @@ if search or ticker:
         with st.expander('Profit margins (as of {})'.format(company.year_end), expanded=1):
             profit_margin_index = ['Gross margin', 'Operating margin', 'Net margin']
             profit_margin = [company.gross_margin, company.operating_margin, company.net_margin]
-            st.write(profit_margin)
             
             profit_margin_df = pd.DataFrame(profit_margin, index = profit_margin_index)
             st.table(profit_margin_df)
                 
             profit_margin_df = pd.DataFrame(company.profit_margin_dict, index = profit_margin_index)
             st.bar_chart(profit_margin_df)                   
+    
     #except:
         #st.write('\N{cross mark} Stock ticker not found!')
