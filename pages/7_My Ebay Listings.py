@@ -22,6 +22,7 @@ html_temp = """
 st.markdown(html_temp.format('lightblue','black'),unsafe_allow_html=True)
 
 st.write('LEGO Speed Champions: Ferrari F40 Competizione (75890)')
-components.iframe("https://www.ebay.com/itm/403908078579?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=hd1-ldmkqjm&sssrc=2051273&ssuid=hd1-ldmkqjm&var=&widget_ver=artemis&media=MORE")
-components.iframe("https://www.google.com/")
+
+#components.iframe("https://www.ebay.com/itm/403908078579?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=hd1-ldmkqjm&sssrc=2051273&ssuid=hd1-ldmkqjm&var=&widget_ver=artemis&media=MORE")
+#components.iframe("https://www.google.com/")
 components.iframe("https://docs.streamlit.io/en/latest")
