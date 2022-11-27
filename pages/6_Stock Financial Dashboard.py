@@ -1,3 +1,5 @@
+
+
 #yahoo_fin has 2 modules: stock_info and options
 import yahoo_fin.stock_info as si
 import pandas as pd
@@ -36,7 +38,9 @@ class Company:
         val2= str(temp[:-1])
         val1 = '{:.2f}'.format(temp)
         val2= '${}'.format(val2)
-        self.market_cap = val1 
+        st.write(val1)
+        st.write(val2)
+        
         #self.market_cap = '${}'.format(self.market_cap)
         
         self.prices = price_df['adjclose']
