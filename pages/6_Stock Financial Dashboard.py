@@ -32,7 +32,7 @@ class Company:
         self.year_end = overview_df.loc['Fiscal Year Ends'][0]        
         self.market_cap = overview_dict['Market Cap']
         temp = self.market_cap
-        st.write(temp)
+        st.write(temp[-1])
         self.market_cap = '${}'.format(self.market_cap)
         
         self.prices = price_df['adjclose']
