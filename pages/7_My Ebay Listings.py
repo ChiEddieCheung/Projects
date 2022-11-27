@@ -25,5 +25,4 @@ st.write('LEGO Speed Champions: Ferrari F40 Competizione (75890)')
 
 hlink = "https://www.ebay.com/itm/403908078579?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=hd1-ldmkqjm&sssrc=2051273&ssuid=hd1-ldmkqjm&var=&widget_ver=artemis&media=MORE?"
 
-st.markdown('<a href="https://www.ebay.com/itm/403908078579?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=hd1-ldmkqjm&sssrc=2051273&ssuid=hd1-ldmkqjm&var=&widget_ver=artemis&media=MORE?">LEGO Speed Champion</a>', unsafe_allow_html=True)
->LEGO Speed Champion</a>', unsafe_allow_html=True)
+st.markdown('<a href="https://www.ebay.com/itm/403908078579?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=hd1-ldmkqjm&sssrc=2051273&ssuid=hd1-ldmkqjm&var=&widget_ver=artemis&media=MORE">LEGO Speed Champion</a>', unsafe_allow_html=True)
