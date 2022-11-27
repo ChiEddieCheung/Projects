@@ -31,7 +31,7 @@ class Company:
        
         self.year_end = overview_df.loc['Fiscal Year Ends'][0]        
         self.market_cap = overview_dict['Market Cap']
-        temp = str(self.market_cap)
+        temp = self.market_cap
         st.write(temp)
         self.market_cap = '${}'.format(self.market_cap)
         
