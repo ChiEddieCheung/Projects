@@ -34,12 +34,10 @@ class Company:
         
         self.market_cap = overview_dict['Market Cap']
         temp = self.market_cap
-        val1 = temp[:-1]
-        val1 = val1[:-1]
-        val1 = '${}'.format(val1 + temp[-1])
-        val2 = temp[-1]
-        st.write(val1)
-        self.market_cap = val1
+        val = temp[:-1]
+        val = val[:-1]
+        val = '${}'.format(val + temp[-1])
+        self.market_cap = val
         
         self.prices = price_df['adjclose']
         self.price_earnings_ratio = overview_dict['PE Ratio (TTM)']
