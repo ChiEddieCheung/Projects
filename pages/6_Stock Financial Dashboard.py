@@ -29,7 +29,7 @@ class Company:
         income_statement = si.get_income_statement(ticker)
        
         self.year_end = overview_df.loc['Fiscal Year Ends'][0]        
-        self.market_cap = overview_dict['Market Cap']
+        self.market_cap = '$' % overview_dict['Market Cap']
         
         self.prices = price_df['adjclose']
         self.price_earnings_ratio = overview_dict['PE Ratio (TTM)']
