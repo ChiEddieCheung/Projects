@@ -69,7 +69,7 @@ if search == True or symbol != '':
             
         st.dataframe(df.style.applymap(color_cell, subset=['Followers']), use_container_width=True)        
         st.info("*Note: Any twitter with over 1000 followers is highlighted." \
-                " Generally those twitters with large number of followers" \
-                " have 'Neutral' sentiment.*")
+                " In general, those twitters with large number of followers" \
+                " usually have 'Neutral' sentiment.*")
     except:
         st.write('\N{cross mark} Stock ticker not found!')
