@@ -33,8 +33,7 @@ class Company:
         self.market_cap = overview_dict['Market Cap']
         
         temp = self.market_cap.split('.')
-        temp = f'${temp[0]}.\
-               {temp[1][:-1][:2]}\
+        temp = f'${temp[0]}.{temp[1][:-1][:2]}\
                {temp[1][-1]}'
         st.write(temp)
     
