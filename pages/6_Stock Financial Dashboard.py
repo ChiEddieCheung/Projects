@@ -1,5 +1,3 @@
-
-
 #yahoo_fin has 2 modules: stock_info and options
 import yahoo_fin.stock_info as si
 import pandas as pd
@@ -34,10 +32,14 @@ class Company:
         
         self.market_cap = overview_dict['Market Cap']
         temp = self.market_cap
-        val = temp[:-1]
-        val = val[:-1]
-        val = '${}'.format(val + temp[-1])
-        self.market_cap = val
+        temp = temp.split('.')
+        st.write(temp[0])
+        #val = temp[:-1]
+        #val = val[:-1]
+        #val = '${}'.format(val + temp[-1])
+        
+        temp = '${}'.format(temp
+        #self.market_cap = val
         
         self.prices = price_df['adjclose']
         self.price_earnings_ratio = overview_dict['PE Ratio (TTM)']
