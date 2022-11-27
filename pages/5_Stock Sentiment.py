@@ -37,7 +37,7 @@ if search == True or symbol != '':
         st.info(f"##### {data['symbol']['title']}")
 
         df = pd.DataFrame()     #Initialize blank data frame        
-
+        st.write(data['messages'])
         for i in range(0, len(data['messages'])):
             if i < 30:
                 msg = data['messages'][i]            
@@ -56,8 +56,7 @@ if search == True or symbol != '':
             
         df = df.rename(columns = {0:'Date Created', 1:'Twitter Name', 2:'Followers', 3:'Sentiment'})        
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
-        #df = df.reset_index().drop(['index'], axis=1)
-        df = df.reset_index()
+        df = df.reset_index().drop(['index'], axis=1)
         checked = st.checkbox("Check to exclude 'Neutral' sentiment")
         if checked:
             df = df.query('Sentiment != "Neutral"')
