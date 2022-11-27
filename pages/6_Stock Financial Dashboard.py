@@ -34,6 +34,7 @@ class Company:
         temp = self.market_cap
         temp = temp.split('.')
         st.write(temp[0])
+        st.write(temp[1][-1])
         
         #val = temp[:-1]
         #val = val[:-1]
