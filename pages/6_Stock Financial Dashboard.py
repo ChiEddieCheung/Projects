@@ -33,7 +33,7 @@ class Company:
         self.market_cap = overview_dict['Market Cap']
         temp = self.market_cap
         
-        sr.write(temp[-1])
+        sr.write(temp)
         self.market_cap = '${}'.format(self.market_cap)
         
         self.prices = price_df['adjclose']
