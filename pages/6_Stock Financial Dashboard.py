@@ -36,7 +36,7 @@ class Company:
         #st.write(temp[-1])
         #st.caption(temp[:-1])
         val1 = temp[:-1]
-        val3 = round(val1, 2)
+        val3 = round(int(val1), 2)
         val2 = temp[-1]
 
         st.write(val3)
