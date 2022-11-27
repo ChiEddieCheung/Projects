@@ -44,6 +44,7 @@ class Company:
         st.write(val1)
         st.write(val2)
         st.write(val1 + val2)
+        self.market_cap = val1 + val2
         #self.market_cap = '${}'.format(self.market_cap)
         
         self.prices = price_df['adjclose']
