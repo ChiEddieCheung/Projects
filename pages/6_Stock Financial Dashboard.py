@@ -33,16 +33,18 @@ class Company:
         self.market_cap = overview_dict['Market Cap']
         
         # Method 1
-        temp = self.market_cap.split('.')
-        temp = '$' + temp[0] + '.' + \
-               temp[1][:-1][:2] + \
-               temp[1][-1]
-        self.market_cap = temp
+        #temp = self.market_cap.split('.')
+        #temp = '$' + temp[0] + '.' + \
+               #temp[1][:-1][:2] + \
+               #temp[1][-1]
+        #self.market_cap = temp
         
         # Method 2
-        #val = temp[:-1]
+        temp = self.market_cap
+        val = temp[:.2]
         #val = val[:-1]
-        #val = '${}'.format(val + temp[-1])
+        val = f'${val}{temp[-1]}'
+        st.write(val)
         #self.market_cap = val
         
         self.prices = price_df['adjclose']
