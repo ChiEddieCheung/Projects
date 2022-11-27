@@ -35,8 +35,8 @@ class Company:
         temp = self.market_cap
         #st.write(temp[-1])
         #st.caption(temp[:-1])
-        val1 = str(temp[:-1])
-        #val2 = '{:.2f}'.format(val1)
+        val1 = temp[:-1]
+        val2 = '{:.2f}'.format(val1)
 
         st.write(val1)
         st.write(val2)
