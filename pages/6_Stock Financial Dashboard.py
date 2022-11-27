@@ -61,36 +61,36 @@ ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker})
 
 if search or ticker:
-    try:        
-        company = Company(ticker)                
-        company.get_profit_margins()        
+    company = Company(ticker)                
+    company.get_profit_margins()        
         
-        st.info(f"##### {si.get_quote_data(ticker)['shortName']}")
-        st.write('##### Company Overview')
+    st.info(f"##### {si.get_quote_data(ticker)['shortName']}")
+    st.write('##### Company Overview')
 
-        company_info = si.get_company_info(ticker)
-        st.markdown(company_info.loc['longBusinessSummary'][0], 
-            unsafe_allow_html=True)
+    company_info = si.get_company_info(ticker)
+    st.markdown(company_info.loc['longBusinessSummary'][0], 
+        unsafe_allow_html=True)
                 
-        col1, col2 = st.columns(2)
-        with col1:
-            overview_index = ['Market cap', 'P/E ratio', 'Dividend Yield']
-            overview = {'Value':[company.market_cap, company.price_earnings_ratio,
-                company.dividend_yield]}
-            overview_df = pd.DataFrame(overview, index = overview_index)
+    col1, col2 = st.columns(2)
+    with col1:
+        overview_index = ['Market cap', 'P/E ratio', 'Dividend Yield']
+        overview = {'Value':[company.market_cap, company.price_earnings_ratio,
+            company.dividend_yield]}
+        overview_df = pd.DataFrame(overview, index = overview_index)
             
-            st.line_chart(company.prices)
-            st.table(overview_df)            
+        st.line_chart(company.prices)
+        st.table(overview_df)            
 
-        with col2:
-            with st.expander('Profit margins (as of {})'.format(company.year_end), expanded=1):
-                profit_margin_index = ['Gross margin', 'Operating margin', 'Net margin']
-                profit_margin = [company.gross_margin, company.operating_margin, company.net_margin]
-                st.write(profit_margin)
-                profit_margin_df = pd.DataFrame(profit_margin, index = profit_margin_index)
-                st.table(profit_margin_df)
+    with col2:
+        with st.expander('Profit margins (as of {})'.format(company.year_end), expanded=1):
+            profit_margin_index = ['Gross margin', 'Operating margin', 'Net margin']
+            profit_margin = [company.gross_margin, company.operating_margin, company.net_margin]
+            st.write(profit_margin)
+            
+            profit_margin_df = pd.DataFrame(profit_margin, index = profit_margin_index)
+            st.table(profit_margin_df)
                 
-                profit_margin_df = pd.DataFrame(company.profit_margin_dict, index = profit_margin_index)
-                st.bar_chart(profit_margin_df)                   
-    except:
-        st.write('\N{cross mark} Stock ticker not found!')
+            profit_margin_df = pd.DataFrame(company.profit_margin_dict, index = profit_margin_index)
+            st.bar_chart(profit_margin_df)                   
+    #except:
+        #st.write('\N{cross mark} Stock ticker not found!')
