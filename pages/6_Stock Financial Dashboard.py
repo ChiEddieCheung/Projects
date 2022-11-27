@@ -34,15 +34,10 @@ class Company:
         
         # Method 1
         temp = self.market_cap.split('.')
-        #temp = temp.split('.')
-        temp = '$' + temp[0] + \
+        temp = '$' + temp[0] + '.' + \
                temp[1][:-1][:2] + \
                temp[1][-1]
         self.market_cap = temp
-        
-        st.write(temp[0])
-        st.write(temp[1][:-1][:2])
-        st.write(temp[1][-1])
         
         # Method 2
         #val = temp[:-1]
