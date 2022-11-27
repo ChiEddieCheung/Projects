@@ -37,6 +37,7 @@ class Company:
         #st.caption(temp[:-1])
         val1 = temp[:-1]
         val1 = val1[:-1]
+        val1 = '${}'.format(val1)
         val2 = temp[-1]
 
         st.write(val1)
