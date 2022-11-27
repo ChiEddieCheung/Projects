@@ -21,4 +21,4 @@ html_temp = """
 """
 st.markdown(html_temp.format('lightblue','black'), unsafe_allow_html=True)
 
-components.iframe("www.google.com")
+components.iframe("http://www.google.com")
