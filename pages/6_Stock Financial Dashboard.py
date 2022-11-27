@@ -33,10 +33,10 @@ class Company:
         temp = self.market_cap
         #st.write(temp[-1])
         #st.caption(temp[:-1])
-        temp = temp[:-1]
-        val = '${:.2f}'.format(temp)
-        val += temp[-1]
-        self.market_cap = val
+        val2= str(temp[:-1])
+        val1 = '{:.2f}'.format(temp)
+        val2= '${}'.format(val2)
+        self.market_cap = val1 
         #self.market_cap = '${}'.format(self.market_cap)
         
         self.prices = price_df['adjclose']
