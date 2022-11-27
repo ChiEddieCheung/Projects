@@ -35,7 +35,7 @@ class Company:
         # Method 1
         temp = self.market_cap.split('.')
         #temp = temp.split('.')
-        temp = '$' + temp[0] \
+        temp = '$' + temp[0] + \
                temp[1][:-1][:2] + \
                temp[1][-1]
         self.market_cap = temp
