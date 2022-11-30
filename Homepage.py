@@ -32,12 +32,13 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("projects/img_2162.jpg")
+        background: "projects/img_2162.jpg";
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 st.info("### Eddie Cheung's Python Learning Project")
 
 st.write('')
