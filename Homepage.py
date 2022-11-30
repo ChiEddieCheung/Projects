@@ -54,10 +54,7 @@ st.markdown("""
         span.css-10trblm.e16nr0p30 {
             background-color: yellow;
         }
-        
-        div.css-zt5igj.e16nr0p33 {
-            border: 2px solid black;
-        }
+               
     </style>
 """, unsafe_allow_html=True)
 
