@@ -40,7 +40,7 @@ with col2:
     #if st.button('View Detail...'):
     st.markdown(f"""
         <style>
-            .button1 {color:black; background-color: #00ccff;}
+        
         </style>
         <a href={sSite}>
         <button class=button1>
