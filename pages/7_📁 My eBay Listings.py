@@ -19,7 +19,7 @@ sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
 col1, col2 = st.columns([3,5], gap='medium')
 
 with col1:
-    #st.write('Slide to select a picture to view:')
+    #st.write('Slide to select picture:')
     val = st.slider('Slide to select a picture to view:', 1, 2, 1)
 
     if val == 1:
