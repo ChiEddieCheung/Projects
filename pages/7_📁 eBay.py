@@ -22,7 +22,7 @@ with col2:
     st.image(sImg2, width=80)
     
 val = st.slider('Picture 1 of 2', 1, 2, 1)
-if val = 1:
+if val == 1:
     showImg = f"""
         <img src={sImg} 
         width="54" height="80" alt="LEGO Harry Potter">
