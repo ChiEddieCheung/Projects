@@ -7,8 +7,8 @@ st.title('My eBay Listings')
 
 sImg = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
 sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
-    
-val = st.slider('Picture 1 of 2', 1, 2, 1)
+
+val = st.slider('Select a picture to view:', 1, 2, 1, format='%{}')
 if val == 1:
     showImg = f"""
         <img src={sImg} 
