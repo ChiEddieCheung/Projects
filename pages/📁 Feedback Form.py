@@ -15,6 +15,13 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
+html_temp = """
+    <div style="background-color:{};padding:5px;border-radius:8px">
+    <h1 style="color:{};text-align: center;font-size: 28px">Feedback Form</h1>
+    </div><br>
+"""
+st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
+
 def init_connection():
     return mqc.connect(**st.secrets['mysql'])
 
@@ -24,13 +31,6 @@ def init_connection():
 def add_data(author,title,article,postdate):
     c.execute('INSERT INTO blogtable (author,title,article,postdate) VALUES (%s,%s,%s,%s)',(author,title,article,postdate))
     conn.commit()
-
-html_temp = """
-    <div style="background-color:{};padding:5px;border-radius:8px">
-    <h1 style="color:{};text-align: center;font-size: 28px">Feedback Form</h1>
-    </div><br>
-"""
-st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 st.write("###### *Please leave any comment or idea on my feedback form.*")
 st.write('###### *Your feedback is very important to me!*')
