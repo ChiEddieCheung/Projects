@@ -28,7 +28,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-urlImg = "https://github.com/ChiEddieCheung/Projects/blob/main/bluewave.png?raw=true"
+urlImg = "https://github.com/ChiEddieCheung/Projects/blob/main/ice-cream.jpg?raw=true"
 def add_bg_from_url():
     st.markdown(
          f"""
