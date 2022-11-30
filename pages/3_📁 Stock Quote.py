@@ -29,7 +29,7 @@ if info:
 
 if (ticker_sym != '' or search):
     try:        
-        st.info(f"##### {Stock_Name}")
+        st.success(f"###### {Stock_Name}")
 
         current_date = datetime.now().date()
 
