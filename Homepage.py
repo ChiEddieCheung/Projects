@@ -38,7 +38,10 @@ def add_bg_from_url():
              background-image: url("{urlImg}");
              background-attachment: fixed;
              background-size: cover;
-             border: 2px solid black
+         }}
+
+         .stContainer {{
+             border: 1px solid black
          }}
          </style>
          """,
@@ -47,12 +50,13 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 
-st.write("### Eddie Cheung's Python Learning Project")
+with st.container:
+    st.write("### Eddie Cheung's Python Learning Project")
 
-st.write('')
-st.write('###### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
-
-for i in range(5):
     st.write('')
+    st.write('###### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
 
-st.write("###### Feel free to check out [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
+    for i in range(5):
+        st.write('')
+
+    st.write("###### Feel free to check out [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
