@@ -22,8 +22,7 @@ hide_menu = """
 """#
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.write('#### Stock Sentiment')
-st.write('___')
+st.info('#### Stock Sentiment')
 
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
