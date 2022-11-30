@@ -12,7 +12,7 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.caption('*Page under construction*')
-st.write('#### My eBay Listings')
+st.info('#### My eBay Listings')
 
 sSite = "https://www.ebay.com/itm/403826614108"
 sImg = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
