@@ -59,8 +59,7 @@ class Company:
             'Value':[self.gross_margin, self.operating_margin, self.net_margin]
             }    
 
-st.write('#### Stock Financial Dashboard')
-st.write('___')
+st.info('#### Stock Financial Dashboard')
 
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker})
