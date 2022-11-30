@@ -36,7 +36,7 @@ def add_bg_from_url():
          .stApp {{
              background-image: url("{ImgUrl}");     
              background-size: cover;
-             background-repeat: repeat-y;
+             background-repeat: round;
          }}
          </style>
          """,
@@ -47,8 +47,7 @@ add_bg_from_url()
 st.markdown("""
     <style>    
         header.css-18ni7ap.e8zbici2 {
-            border: 0px;
-            background-color: lightgray;
+            border: 0px;            
         }
     </style>
 """, unsafe_allow_html=True)
