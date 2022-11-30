@@ -19,4 +19,15 @@ with col1:
     #st.image(sImg, width=54)
 
 with col2:
-    st.image(sImg2, caption='LEGO Harry Potter', width=80)
+    st.image(sImg2, width=80)
+    
+val = st.slider('Picture 1 of 2', 1, 2, 1)
+if val = 1:
+    showImg = f"""
+        <img src={sImg} 
+        width="54" height="80" alt="LEGO Harry Potter">
+    """
+    st.markdown(showImg, unsafe_allow_html=True)
+else:
+    st.image(sImg2, width=80)
+st.caption('LEGO Harry Potter Hogwarts Moment')
