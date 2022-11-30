@@ -26,12 +26,12 @@ with col1:
         st.caption('Picture 1 of 2')
         showImg = f"""
             <img src={sImg} 
-            width="80" height="120" alt="LEGO Harry Potter">
+            width="160" height="240" alt="LEGO Harry Potter">
         """
         st.markdown(showImg, unsafe_allow_html=True)
     else:
         st.caption('Picture 2 of 2')
-        st.image(sImg2, width=120)
+        st.image(sImg2, width=240)
 
 with col2:
     st.write('###### LEGO Harry Potter Hogwarts Moment')
