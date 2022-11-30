@@ -7,14 +7,6 @@ st.set_page_config(
     layout='wide'
 )
 
-st.markdown("""
-    <style>    
-        div.css-io98ki.e1tzin5v0 {
-            border: 3px solid gray;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
 hide_menu = """
     <style>               
         #MainMenu {visibility: hidden;}                
@@ -51,6 +43,14 @@ def add_bg_from_url():
          unsafe_allow_html=True
      )
 add_bg_from_url() 
+
+st.markdown("""
+    <style>    
+        div.css-io98ki.e1tzin5v0 {
+            border: 1px solid gray;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 with st.container():
     st.header("Eddie Cheung's Python Learning Project")
