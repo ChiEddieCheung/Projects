@@ -66,7 +66,7 @@ if search == True or symbol != '':
                 return highlight
             
         st.dataframe(df.style.applymap(color_cell, subset=['Followers']), use_container_width=True)        
-        st.info("*Note: Any twitter with over 1000 followers is highlighted." \
+        st.info("*Note: Twitters with over 1000 followers are highlighted." \
                 " In general, twitters with large number of followers" \
                 " usually have 'Neutral' sentiment.*")
     except:
