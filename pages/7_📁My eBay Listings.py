@@ -41,11 +41,11 @@ with col2:
     st.markdown(f"""
         <head>
         <style>
-            .button1 {background: blue;}
+            .button {background-color: blue;}
         </style>
         </head>
         <a href={sSite}>
-        <button class=button1>
+        <button class=button>
             View Details...
         </button>
         </a>
