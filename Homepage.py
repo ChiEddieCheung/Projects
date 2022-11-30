@@ -28,6 +28,16 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("url_goes_here")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.info("### Eddie Cheung's Python Learning Project")
 
 st.write('')
