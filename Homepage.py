@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title='Eddie Cheung Home Page',
+    page_title="Eddie Cheung's Python Study Project",
     page_icon='🏠',
     initial_sidebar_state='auto',
     layout='wide'
@@ -44,21 +44,13 @@ def add_bg_from_url():
      )
 add_bg_from_url() 
 
-st.markdown("""
-    <style>    
-        header.css-18ni7ap.e8zbici2 {
-            border: 0px;  
-            background-color: lightgray;
-        }
-        
-        span.css-10trblm.e16nr0p30 {
-            background-color: ghostwhite;
-        }
-               
-    </style>
-""", unsafe_allow_html=True)
-
-st.header("Eddie Cheung's Python Learning Project")
+h1_temp = """
+    <div style="background-color:{};padding:5px;border-radius:8px">
+    <h1 style="color:{};text-align: center;font-size: 28px">Eddie Cheung's Python Study Project</h1>
+    </div><br>
+"""
+st.markdown(h1_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
+#st.header("Eddie Cheung's Python Study Project")
 
 st.write('')
 st.write('###### \N{clipboard} The sidebar menu contains apps written in Streamlit Python')       
