@@ -38,7 +38,7 @@ def add_bg_from_url():
              background-image: url("{urlImg}");
              background-attachment: fixed;
              background-size: cover;
-             border: 2px;
+             border: 2px solid black
          }}
          </style>
          """,
