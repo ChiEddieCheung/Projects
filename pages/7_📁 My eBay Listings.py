@@ -20,7 +20,7 @@ col1, col2 = st.columns([3,5], gap='medium')
 
 with col1:
     #st.write('Slide to select picture:')
-    val = st.slider('Slide to select a picture to view:', 1, 2, 1)
+    val = st.slider('Slide to select picture:', 1, 2, 1)
 
     if val == 1:
         st.caption('Picture 1 of 2')
