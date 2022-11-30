@@ -68,7 +68,7 @@ if search or ticker:
     company = Company(ticker)                
     company.get_profit_margins()        
         
-    st.info(f"##### {si.get_quote_data(ticker)['shortName']}")
+    st.success(f"##### {si.get_quote_data(ticker)['shortName']}")
     st.write('##### Company Overview')
 
     company_info = si.get_company_info(ticker)
