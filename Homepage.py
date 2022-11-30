@@ -48,20 +48,20 @@ st.markdown("""
     <style>    
         div.css-io98ki.e1tzin5v0 {
             border: 1px solid gray;
+            background-color: yellow;
         }
     </style>
 """, unsafe_allow_html=True)
 
-with st.container():
-    st.header("Eddie Cheung's Python Learning Project")
+st.header("Eddie Cheung's Python Learning Project")
 
+st.write('')
+st.write('###### \N{clipboard} The sidebar menu contains apps written in Streamlit Python')       
+
+for i in range(5):
     st.write('')
-    st.write('###### \N{clipboard} The sidebar menu contains apps written in Streamlit Python')       
 
-    for i in range(5):
-        st.write('')
-
-    st.write("###### Feel free to check out [My bio]" \
-        "(https://my.indeed.com/p/chichiueddiec-5mgjx37) " \
-        "and drop me [some feedbacks or ideas]" \
-        "(https://chicheung.streamlit.app/Feedback_Form).")
+st.write("###### Feel free to check out [My bio]" \
+    "(https://my.indeed.com/p/chichiueddiec-5mgjx37) " \
+    "and drop me [some feedbacks or ideas]" \
+    "(https://chicheung.streamlit.app/Feedback_Form).")
