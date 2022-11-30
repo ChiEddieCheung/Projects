@@ -22,16 +22,16 @@ with col1:
     #st.write('Slide to select picture:')
     val = st.slider('Slide to select picture:', 1, 2, 1)
 
-    if val == 1:
-        st.caption('Picture 1 of 2')
+    if val == 1:    
         showImg = f"""
             <img src={sImg} 
             width="160" height="240" alt="LEGO Harry Potter">
         """
         st.markdown(showImg, unsafe_allow_html=True)
-    else:
-        st.caption('Picture 2 of 2')
+        st.caption('Picture 1 of 2')   
+    else:       
         st.image(sImg2, width=240)
+        st.caption('Picture 2 of 2')
 
 with col2:
     st.write('###### LEGO Harry Potter Hogwarts Moment')
