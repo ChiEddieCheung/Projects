@@ -57,7 +57,7 @@ with st.form('myform'):
              "(https://my.indeed.com/p/chichiueddiec-5mgjx37) " \
              "and drop me [some feedbacks or ideas]" \
              "(https://chicheung.streamlit.app/Feedback_Form).")
-    send = st.form_submit_button('Hi', on_click='myFunc()')
+    send = st.form_submit_button('Hi')
     if send:
         st.markdown("""
             <head>
