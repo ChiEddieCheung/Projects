@@ -7,7 +7,7 @@ st.title('My eBay Listings')
 
 
 sImg = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
-showImg = """
+showImg = f"""
     <img src={sImg} 
      width="40" height="60" alt="LEGO Harry Potter">
 """
