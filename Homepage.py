@@ -53,12 +53,12 @@ st.markdown(h1_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 #st.header("Eddie Cheung's Python Study Project")
 
 st.write('')
-st.write('###### \N{clipboard} The sidebar menu contains apps written in Streamlit Python')       
+st.write('##### \N{clipboard} The sidebar menu contains apps written in Streamlit Python')       
 
 for i in range(5):
     st.write('')
 
-st.write("###### Feel free to check out [My bio]" \
+st.write("##### Feel free to check out [My bio]" \
     "(https://my.indeed.com/p/chichiueddiec-5mgjx37) " \
     "and drop me [some feedbacks or ideas]" \
     "(https://chicheung.streamlit.app/Feedback_Form).")
