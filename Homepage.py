@@ -19,7 +19,7 @@ hide_menu = """
             font-style: italic;
             display: block;    
             text-align: center;
-            background: #ffcc00;
+            background: lavender;
             color: black;
             padding: 5px;
             height: 35px;
@@ -46,10 +46,10 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 
-st.success("### Eddie Cheung's Python Learning Project")
+st.info("### Eddie Cheung's Python Learning Project")
 
 st.write('')
 st.write('##### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
 
 st.write('')
-st.success("###### Feel free to check out [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
+st.write("###### Feel free to check out [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
