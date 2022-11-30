@@ -55,11 +55,9 @@ with st.form('myform'):
     for i in range(5):
         st.write('')
 
-    st.write("###### [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
+    st.write("###### [My bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
     send = st.form_submit_button('Hi')
     if send:
         st.markdown("""
-          <script>
-           window.location = "https://my.indeed.com/p/chichiueddiec-5mgjx37"
-          </script>
+          <meta http-equiv="refresh" content="0; URL="https://my.indeed.com/p/chichiueddiec-5mgjx37" />
           """, unsafe_allow_html=True)
