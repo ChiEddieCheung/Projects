@@ -32,7 +32,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: url("url_goes_here")
+        background: url("projects/img_2162.jpg")
     }
     </style>
     """,
