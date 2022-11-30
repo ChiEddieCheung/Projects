@@ -52,7 +52,7 @@ st.markdown("""
         }
         
         span.css-10trblm.e16nr0p30 {
-            background-color: yellow;
+            background-color: ghostwhite;
         }
                
     </style>
