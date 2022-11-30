@@ -19,7 +19,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 url = 'http://api.tvmaze.com/singlesearch/shows'
 
 st.info('#### TV Show Lookup')
-color = st.color_picker('What color?', '#00f900')
+color = st.color_picker('Pick a color:', '#e2fcf0')
 show_name = st.text_input('Enter a TV show name:')
 search = st.button('Search', key={show_name})
 if show_name != '' or search:
