@@ -46,7 +46,7 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 
-with st.form(''):
+with st.form('myform'):
     st.write("### Eddie Cheung's Python Learning Project")
 
     st.write('')
