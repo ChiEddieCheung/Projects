@@ -47,7 +47,7 @@ st.markdown("""
     <style>    
         header.css-18ni7ap.e8zbici2 {
             border: 1px solid gray;
-            background-color: yellow;
+            background-color: gray;
         }
     </style>
 """, unsafe_allow_html=True)
