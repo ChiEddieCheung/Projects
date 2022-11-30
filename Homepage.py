@@ -50,7 +50,10 @@ with st.form('myform'):
     st.header("Eddie Cheung's Python Learning Project")
 
     st.write('')
-    st.text('###### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
+    st.write('###### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
+    
+    st.text('This is text.')
+    st.caption('This is caption.')
 
     for i in range(5):
         st.write('')
