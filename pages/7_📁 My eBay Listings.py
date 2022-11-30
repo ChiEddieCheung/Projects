@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 from PIL import Image
 
 st.caption('*Page under construction*')
-st.title('My eBay Listings')
+st.write('#### My eBay Listings')
+st.write('---')
 
 sImg = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
 sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
