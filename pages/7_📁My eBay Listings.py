@@ -40,10 +40,10 @@ with col2:
     #if st.button('View Detail...'):
     st.write(f'''
         <style>
-            .button {color:black; background-color: #00ccff;}
+            .button1 {color:black; background-color: #00ccff;}
         </style>
         <a href={sSite}>
-        <button class=button>
+        <button class=button1>
             View Details...
         </button>
         </a>
