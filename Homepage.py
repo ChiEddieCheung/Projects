@@ -55,5 +55,9 @@ with st.form('myform'):
     for i in range(5):
         st.write('')
 
-    st.write("###### Feel free to check out [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
+    st.write("###### [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
     send = st.form_submit_button('Hi')
+    if send:
+        st.markdown("""
+          <a href=https://my.indeed.com/p/chichiueddiec-5mgjx37>Link</a>
+          """, unsafe_allow_html=True)
