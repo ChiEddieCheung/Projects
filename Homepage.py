@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.write("""
     <style>    
-        div.css-1p4kjpe.eltzin5v0, [class*="css"]  {
+        [class*="css"]  {
             border: 1px solid black;
         }
     </style>
