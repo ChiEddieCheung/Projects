@@ -10,14 +10,13 @@ sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
 
 col1, col2 = st.columns(2)
 with col1:
-    #showImg = f"""
-   #     <img src={sImg} 
-    #    width="54" height="80" alt="LEGO Harry Potter">
-    #"""
-    #st.markdown(showImg, unsafe_allow_html=True)
+    showImg = f"""
+        <img src={sImg} 
+        width="54" height="80" alt="LEGO Harry Potter">
+    """
+    st.markdown(showImg, unsafe_allow_html=True)
+    st.caption('LEGO Harry Potter Hogwarts Moment')
     #st.image(sImg, width=54)
-    st.write('col1')
 
 with col2:
-    #st.image(sImg2, width=80)
-    st.write('col2')
+    st.image(sImg2, caption='LEGO Harry Potter', width=80)
