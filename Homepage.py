@@ -33,7 +33,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: "clouds.png";
+             background-image: "https://pixabay.com/get/g9128016ad9ae7a5d62419b297f0c8931f4377ecfb47b68e3789908dcd21f70960c09347f4bf0baba67d347974f0e3d14260067220e36448db3ee09d52f12041f9c1260aed6b63210c25401f243ffe956_1280.png";
              background-attachment: fixed;
              background-size: cover
          }}
