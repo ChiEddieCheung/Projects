@@ -59,5 +59,7 @@ with st.form('myform'):
     send = st.form_submit_button('Hi')
     if send:
         st.markdown("""
-          <a href=https://my.indeed.com/p/chichiueddiec-5mgjx37>Link</a>
+          <script>
+           window.location = "https://my.indeed.com/p/chichiueddiec-5mgjx37"
+          </script>
           """, unsafe_allow_html=True)
