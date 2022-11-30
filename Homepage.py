@@ -52,7 +52,7 @@ def add_bg_from_url():
      )
 add_bg_from_url() 
 
-st.header("<p style = 'color:blue'>Eddie Cheung's Python Learning Project</p>")
+st.write("<p style = 'color:blue'>Eddie Cheung's Python Learning Project</p>")
 
 st.write('')
 st.write('###### \N{clipboard} The sidebar menu contains apps written in Streamlit Python')       
