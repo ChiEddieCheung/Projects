@@ -29,8 +29,8 @@ checked = st.checkbox('Check to display Powerball data')
 if checked:
     st.dataframe(df, use_container_width=True)
 
-st.info('##### ' + 'Trending Patterns of Big 5 Numbers')
+st.success('##### ' + 'Trending Patterns of Big 5 Numbers')
 st.line_chart(df1, x='Draw Date') 
 
-st.info('##### Trending Pattern of Powerball')
+st.success('##### Trending Pattern of Powerball')
 st.line_chart(df2, x='Draw Date')
