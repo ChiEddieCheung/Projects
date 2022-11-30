@@ -15,7 +15,6 @@ hide_menu = """
     </style>
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
-but 
 url = 'http://api.tvmaze.com/singlesearch/shows'
 
 st.info('#### TV Show Lookup')
