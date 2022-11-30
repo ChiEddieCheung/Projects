@@ -10,7 +10,7 @@ st.set_page_config(
 st.markdown("""
     <style>    
         div.block-container.css-18e3th9.egzxvld2 {
-            border: 1px solid black;
+            border: 2px solid lightgray;
         }
     </style>
 """, unsafe_allow_html=True)
