@@ -26,4 +26,4 @@ with col1:
         st.image(sImg2, width=80)
 
 with col2:
-    st.caption('LEGO Harry Potter Hogwarts Moment')
+    st.subheader('LEGO Harry Potter Hogwarts Moment')
