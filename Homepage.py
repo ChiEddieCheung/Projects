@@ -45,7 +45,7 @@ add_bg_from_url()
 
 st.markdown("""
     <style>    
-        div.css-io98ki.e1tzin5v0 {
+        header.css-18ni7ap.e8zbici2 {
             border: 1px solid gray;
             background-color: yellow;
         }
