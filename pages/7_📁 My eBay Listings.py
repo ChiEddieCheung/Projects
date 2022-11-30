@@ -36,7 +36,7 @@ with col1:
         st.caption('Picture 2 of 2')
 
 with col2:
-    st.write('##### LEGO Harry Potter Hogwarts Moment')
+    st.write('##### LEGO Harry Potter Hogwarts Moment: Potions Class (76383)')
     #if st.button('View Detail...'):
     st.write(f'''
         <a href={sSite}>
@@ -46,3 +46,4 @@ with col2:
         </a>
     ''', unsafe_allow_html=True)
     
+i 
