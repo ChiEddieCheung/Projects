@@ -11,7 +11,7 @@ showImg = """
     <img src="{sImg}" 
      width="40" height="60" alt="LEGO Harry Potter">
 """
-st.markdown(f(showImg), unsafe_allow_html=True)
+st.markdown(showImg, unsafe_allow_html=True)
 
 st.write('---')
 
