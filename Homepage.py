@@ -47,7 +47,7 @@ def add_bg_from_url():
 add_bg_from_url() 
 
 with st.form('myform'):
-    st.write("### Eddie Cheung's Python Learning Project")
+    st.header("Eddie Cheung's Python Learning Project")
 
     st.write('')
     st.write('###### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
