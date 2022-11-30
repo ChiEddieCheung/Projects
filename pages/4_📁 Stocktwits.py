@@ -27,7 +27,7 @@ if symbol or search:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json()    
         
-        st.info(f"##### {data['symbol']['title']}")        
+        st.success(f"###### {data['symbol']['title']}")        
 
         for message in data['messages']:                  
             st.image(message['user']['avatar_url'])
