@@ -51,5 +51,7 @@ st.info("### Eddie Cheung's Python Learning Project")
 st.write('')
 st.write('##### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
 
-st.write('')
+for i = 1 to 3:
+    st.write('')
+
 st.write("###### Feel free to check out [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
