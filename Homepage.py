@@ -31,7 +31,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 st.markdown(
     """
     <style>
-    .reportview-container {
+    .container {
         background: #eedd00;
     }
     </style>
