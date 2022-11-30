@@ -34,4 +34,6 @@ with col1:
         st.caption('Picture 2 of 2')
 
 with col2:
-    st.write('###### LEGO Harry Potter Hogwarts Moment')
+    st.write('##### LEGO Harry Potter Hogwarts Moment')
+    if st.button('View Detail...'):
+        
