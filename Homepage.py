@@ -39,10 +39,6 @@ def add_bg_from_url():
              background-attachment: fixed;
              background-size: cover;
          }}
-
-         .container {{
-             border: 1px solid black
-         }}
          </style>
          """,
          unsafe_allow_html=True
@@ -50,7 +46,7 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 
-with st.container():
+with st.form(''):
     st.write("### Eddie Cheung's Python Learning Project")
 
     st.write('')
@@ -60,3 +56,4 @@ with st.container():
         st.write('')
 
     st.write("###### Feel free to check out [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
+    send = st.form_submit_button('Hi')
