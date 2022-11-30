@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.write("""
     <style>    
-        [class*="div.css"]  {
+        div.css-1p4kjpe.e1tzin5v0  {
             border: 1px solid black;
         }
     </style>
@@ -52,7 +52,7 @@ def add_bg_from_url():
      )
 add_bg_from_url() 
 
-st.write("<p style = 'color:blue'>Eddie Cheung's Python Learning Project</p>", unsafe_allow_html=True)
+st.header("Eddie Cheung's Python Learning Project")
 
 st.write('')
 st.write('###### \N{clipboard} The sidebar menu contains apps written in Streamlit Python')       
