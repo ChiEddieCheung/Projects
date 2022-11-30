@@ -7,6 +7,14 @@ st.set_page_config(
     layout='wide'
 )
 
+st.write("""
+    <style>    
+        html, body, [class*="css"]  {
+            border: 2px solid blue;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
 hide_menu = """
     <style>               
         #MainMenu {visibility: hidden;}                
