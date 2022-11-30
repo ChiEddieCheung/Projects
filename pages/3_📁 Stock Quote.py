@@ -35,7 +35,7 @@ if (ticker_sym != '' or search):
 
         tickerDf = ticker_Data.history(period='1d', start='2022-01-01', end=current_date)
 
-        st.area_chart(tickerDf.Close)
+        st.line_chart(tickerDf.Close)
         st.line_chart(tickerDf.Volume)
     except:
         st.write('\N{cross mark} Stock ticker not found!')
