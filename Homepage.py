@@ -58,7 +58,10 @@ with st.form('myform'):
     for i in range(5):
         st.write('')
 
-    st.write("###### [My bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
+    st.write("###### Feel free to check out [My bio]" \
+             "(https://my.indeed.com/p/chichiueddiec-5mgjx37) " \
+             "and drop me [some feedbacks or ideas]" \
+             "(https://chicheung.streamlit.app/Feedback_Form).")
     send = st.form_submit_button('Hi')
     if send:
         st.markdown("""
