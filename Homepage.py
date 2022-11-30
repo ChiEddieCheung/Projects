@@ -4,8 +4,7 @@ st.set_page_config(
     page_title='Home Page',
     page_icon='🏠',
     initial_sidebar_state='auto',
-    layout='wide',
-    background=#ffcc00
+    layout='wide'
 )
 
 hide_menu = """
