@@ -7,7 +7,7 @@ st.set_page_config(
     layout='wide'
 )
 
-st.write("""
+st.markdown("""
     <style>    
         div.css-io98ki.e1tzin5v0 {
             border: 1px solid black;
