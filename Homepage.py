@@ -28,16 +28,21 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.markdown(
-    """
-    <style>
-    .container {
-        background: #eedd00;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
 
 st.info("### Eddie Cheung's Python Learning Project")
 
