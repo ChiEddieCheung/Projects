@@ -45,5 +45,3 @@ with col2:
         </button>
         </a>
     ''', unsafe_allow_html=True)
-    
-i 
