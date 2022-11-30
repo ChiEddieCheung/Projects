@@ -28,5 +28,4 @@ with col1:
             st.image(sImg2, width=80)
 
 with col2:
-    with st.form('myForm2'):
-        st.write('###### LEGO Harry Potter Hogwarts Moment')
+    st.write('###### LEGO Harry Potter Hogwarts Moment')
