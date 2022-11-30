@@ -5,5 +5,4 @@ streamlit==1.15.0
 yahoo_fin==0.8.9.1
 yfinance==0.1.77
 mysql-connector-python==8.0.31
-pil==9.3.0
-bs4==4.9.0
+
