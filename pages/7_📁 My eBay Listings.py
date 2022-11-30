@@ -8,7 +8,7 @@ st.title('My eBay Listings')
 sImg = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
 sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
 
-col1, col2 = st.columns(2, 5)
+col1, col2 = st.columns([2, 5])
 
 with col1:
     st.write('Slide to select a picture to view:')
