@@ -11,11 +11,12 @@ sImg = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
 sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
 
 with col1:
-    showImg = f"""
-        <img src={sImg} 
-        width="54" height="80" alt="LEGO Harry Potter">
-    """
-    st.markdown(showImg, unsafe_allow_html=True)
+    #showImg = f"""
+   #     <img src={sImg} 
+    #    width="54" height="80" alt="LEGO Harry Potter">
+    #"""
+    #st.markdown(showImg, unsafe_allow_html=True)
+    st.image(sImg, width=54)
 
 with col2:
     st.image(sImg2, width=80)
