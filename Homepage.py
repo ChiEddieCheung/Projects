@@ -19,7 +19,7 @@ hide_menu = """
             font-style: italic;
             display: block;    
             text-align: center;
-            background: #ffee00;
+            background: #ffcc00;
             color: black;
             padding: 5px;
             height: 35px;
