@@ -5,11 +5,10 @@ from PIL import Image
 st.caption('*Page under construction*')
 st.title('My eBay Listings')
 
-col1, col2 = st.columns(2)
-
 sImg = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
 sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
 
+col1, col2 = st.columns(2)
 with col1:
     #showImg = f"""
    #     <img src={sImg} 
