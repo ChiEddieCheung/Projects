@@ -57,12 +57,14 @@ with st.form('myform'):
              "(https://my.indeed.com/p/chichiueddiec-5mgjx37) " \
              "and drop me [some feedbacks or ideas]" \
              "(https://chicheung.streamlit.app/Feedback_Form).")
-    send = st.form_submit_button('Hi')
+    send = st.form_submit_button('Hi', on_click='myFunc()')
     if send:
         st.markdown("""
             <head>
-               <script>                  
-                window.location.href = "https://my.indeed.com/p/chichiueddiec-5mgjx37";                
-               </script>
+                <script> 
+                    function myFunc() {
+                        window.location.href = "https://my.indeed.com/p/chichiueddiec-5mgjx37";                
+                    }
+                </script>
             </head>
           """, unsafe_allow_html=True)
