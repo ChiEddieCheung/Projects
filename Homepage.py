@@ -46,10 +46,10 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 
-st.info("### Eddie Cheung's Python Learning Project")
+st.success("### Eddie Cheung's Python Learning Project")
 
 st.write('')
 st.write('##### \N{clipboard} Sidebar menu contains a list of apps written in Streamlit Python')
 
 st.write('')
-st.write("###### Feel free to check out [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
+st.success("###### Feel free to check out [my bio](https://my.indeed.com/p/chichiueddiec-5mgjx37) and drop me [some feedbacks or ideas](https://chicheung.streamlit.app/Feedback_Form).")
