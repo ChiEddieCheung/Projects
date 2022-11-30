@@ -15,8 +15,9 @@ with col1:
     #    width="54" height="80" alt="LEGO Harry Potter">
     #"""
     #st.markdown(showImg, unsafe_allow_html=True)
-    st.image(sImg, width=54)
+    #st.image(sImg, width=54)
+    st.write('col1')
 
 with col2:
-    st.image(sImg2, width=80)
-
+    #st.image(sImg2, width=80)
+    st.write('col2')
