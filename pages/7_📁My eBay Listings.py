@@ -43,7 +43,7 @@ with col2:
             .button {color:black; background-color: #00ccff;>
         </style>
         <a href={sSite}>
-        <button class="button">
+        <button class=button>
             View Details...
         </button>
         </a>
