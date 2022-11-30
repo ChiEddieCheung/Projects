@@ -1,6 +1,7 @@
 import streamlit as st
 from bs4 import BeautifulSoup
 from PIL import Image
+import streamlit.components.v1 as components
 
 hide_menu = """
     <style>
@@ -36,4 +37,4 @@ with col1:
 with col2:
     st.write('##### LEGO Harry Potter Hogwarts Moment')
     if st.button('View Detail...'):
-        
+        st.markdown('<a href="https://www.w3schools.com">Visit W3Schools</a>', unsafe_allow_html=True)
