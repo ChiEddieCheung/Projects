@@ -46,8 +46,8 @@ add_bg_from_url()
 st.markdown("""
     <style>    
         header.css-18ni7ap.e8zbici2 {
-            border: 1px solid gray;
-            background-color: gray;
+            border: 0px;
+            background-color: lightgray;
         }
     </style>
 """, unsafe_allow_html=True)
