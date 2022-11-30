@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.markdown("""
     <style>    
-        div.css-io98ki.e1tzin5v0 {
+        div.block-container.css-18e3th9.egzxvld2 {
             border: 1px solid black;
         }
     </style>
