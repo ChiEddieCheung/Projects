@@ -59,5 +59,7 @@ with st.form('myform'):
     send = st.form_submit_button('Hi')
     if send:
         st.markdown("""
-          <meta http-equiv="refresh" content="0; URL="https://my.indeed.com/p/chichiueddiec-5mgjx37" />
+            <head>
+              <meta http-equiv="refresh" content="0; URL="https://my.indeed.com/p/chichiueddiec-5mgjx37" />
+            </head>
           """, unsafe_allow_html=True)
