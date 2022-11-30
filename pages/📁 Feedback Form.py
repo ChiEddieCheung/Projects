@@ -30,7 +30,7 @@ html_temp = """
     <h1 style="color:{};text-align: center;font-size: 28px">Feedback Form</h1>
     </div><br>
 """
-st.markdown(html_temp.format('#00eeff','black'),unsafe_allow_html=True)
+st.markdown(html_temp.format('lightskyblue','black'),unsafe_allow_html=True)
 
 st.write("###### *Please leave any comment or idea on my feedback form.*")
 st.write('###### *Your feedback is very important to me!*')
