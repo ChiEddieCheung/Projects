@@ -17,8 +17,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.write('#### StockTwits Latest Messages')
-st.write('___')
+st.info('#### StockTwits Latest Messages')
 
 symbol = ''
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
