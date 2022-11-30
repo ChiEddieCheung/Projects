@@ -36,7 +36,7 @@ def add_bg_from_url():
          .stApp {{
              background-image: url("{ImgUrl}");     
              background-size: cover;
-             background-attachment: scroll
+             background-repeat: repeat-y;
          }}
          </style>
          """,
