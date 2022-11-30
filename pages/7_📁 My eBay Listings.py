@@ -14,6 +14,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 st.caption('*Page under construction*')
 st.write('#### My eBay Listings')
 
+sSite = 'https://www.ebay.com/itm/403826614108'
 sImg = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
 sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
 
@@ -36,5 +37,12 @@ with col1:
 
 with col2:
     st.write('##### LEGO Harry Potter Hogwarts Moment')
-    if st.button('View Detail...'):
-        st.markdown('<a href="https://www.w3schools.com">Visit W3Schools</a>', unsafe_allow_html=True)
+    #if st.button('View Detail...'):
+    st.write(f'''
+        <a target="_self" href={sSite}>
+        <button>
+            View Details...
+        </button>
+        </a>
+    ''', unsafe_allow_html=True)
+    
