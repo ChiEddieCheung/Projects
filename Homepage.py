@@ -61,10 +61,7 @@ with st.form('myform'):
     if send:
         st.markdown("""
             <head>
-                <style>
-                    <script>
-                        window.location.href = "https://my.indeed.com/p/chichiueddiec-5mgjx37";
-                    </script>
-                </style>
+                                    
+               window.location.href = "https://my.indeed.com/p/chichiueddiec-5mgjx37";                
             </head>
           """, unsafe_allow_html=True)
