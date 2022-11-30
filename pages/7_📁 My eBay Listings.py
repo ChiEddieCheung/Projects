@@ -12,7 +12,7 @@ sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
 col1, col2 = st.columns([2, 5], gap='medium')
 
 with col1:
-    with st.form('myForm'):
+    with st.expander(' ', expanded=True)
         st.write('Slide to select a picture to view:')
         val = st.slider('Slide to select a picture to view:', 1, 2, 1, label_visibility='hidden')
 
