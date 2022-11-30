@@ -41,7 +41,7 @@ with col2:
     st.markdown(f"""
         <head>
         <style>
-            .button {background-color: blue;}
+            button {background-color: blue;}
         </style>
         </head>
         <a href={sSite}>
