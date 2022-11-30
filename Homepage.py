@@ -9,8 +9,8 @@ st.set_page_config(
 
 st.write("""
     <style>    
-        html, body, [class*="css"]  {
-            border: 2px solid blue;
+        body, [class*="css"]  {
+            border: 1px solid black;
         }
     </style>
 """, unsafe_allow_html=True)
