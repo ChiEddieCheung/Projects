@@ -32,7 +32,7 @@ st.markdown(
     """
     <style>
     .reportview-container {
-        background: "projects/img_2162.jpg";
+        background: #eedd00;
     }
     </style>
     """,
