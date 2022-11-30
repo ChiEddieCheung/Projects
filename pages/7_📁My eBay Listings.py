@@ -38,7 +38,7 @@ with col1:
 with col2:
     st.write('##### LEGO Harry Potter Hogwarts Moment: Potions Class (76383)')
     #if st.button('View Detail...'):
-    st.write(f"""
+    st.markdown(f"""
         <style>
             .button1 {color:black; background-color: #00ccff;}
         </style>
