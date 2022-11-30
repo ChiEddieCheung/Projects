@@ -40,7 +40,7 @@ def add_bg_from_url():
              background-size: cover;
          }}
 
-         .stContainer {{
+         .container {{
              border: 1px solid black
          }}
          </style>
