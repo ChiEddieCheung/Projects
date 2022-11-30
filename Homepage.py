@@ -9,7 +9,7 @@ st.set_page_config(
 
 st.markdown("""
     <style>    
-        span.css-10trblm.e16nr0p30 {
+        div.css-io98ki.e1tzin5v0 {
             border: 3px solid gray;
         }
     </style>
