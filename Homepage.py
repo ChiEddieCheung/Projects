@@ -61,6 +61,10 @@ with st.form('myform'):
     if send:
         st.markdown("""
             <head>
-              <meta http-equiv="refresh" content="5; URL='https://my.indeed.com/p/chichiueddiec-5mgjx37'"/>
+                <style>
+                    <script>
+                        window.location.href = "https://my.indeed.com/p/chichiueddiec-5mgjx37";
+                    </script>
+                </style>
             </head>
           """, unsafe_allow_html=True)
