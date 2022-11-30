@@ -50,7 +50,7 @@ def add_bg_from_url():
 
 add_bg_from_url() 
 
-with st.container:
+with st.container():
     st.write("### Eddie Cheung's Python Learning Project")
 
     st.write('')
