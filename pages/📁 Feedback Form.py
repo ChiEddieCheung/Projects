@@ -40,8 +40,8 @@ with st.form('myForm', clear_on_submit=True):
     conn = init_connection()
     c = conn.cursor()
     
-    blog_title = st.text_input('Enter Your Topic:')
-    blog_author = st.text_input("Enter Your Name:"),max_chars=50)
+    blog_title = st.text_input("Enter Your Topic:")
+    blog_author = st.text_input("Enter Your Name:", max_chars=50)
     blog_article = st.text_area("Enter Your Feedback:",height=200)
     blog_post_date = st.date_input("Post Date:")
     submit_button = st.form_submit_button('Add')    
