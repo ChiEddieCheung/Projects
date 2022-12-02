@@ -2,7 +2,7 @@ import streamlit as st
 from bs4 import BeautifulSoup
 #from PIL import Image
 import pyqrcode
-#import cv2
+import png
 
 hide_menu = """
     <style>
@@ -47,8 +47,8 @@ with col2:
         </a>
     """, unsafe_allow_html=True)
     
-    #st.write('')
-    #url = pyqrcode.create(sSite)        
-    #file_name = '403826614108'               
-    #url.png(f'ebay{file_name}.png', scale = 6)
+    st.write('')
+    url = pyqrcode.create(sSite)        
+    file_name = '403826614108             
+    url.png(f'ebay{file_name}.png', scale = 6)
     #st.image(f'ebay{file_name}', width=200)
