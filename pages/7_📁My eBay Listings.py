@@ -48,7 +48,8 @@ with col2:
     """, unsafe_allow_html=True)
     
     st.write('')
-    url = pyqrcode.create(sSite)        
-    file_name = '403826614108'            
-    url.png(f'ebay{file_name}.png', scale = 6)
-    st.image(f'ebay{file_name}', width=200)
+    url = pyqrcode.create(sSite) 
+    st.write(url)       
+    #file_name = '403826614108'            
+    #url.png(f'ebay{file_name}.png', scale = 6)
+    #st.image(f'ebay{file_name}', width=200)
