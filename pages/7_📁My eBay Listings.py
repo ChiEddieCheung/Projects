@@ -1,6 +1,5 @@
 import streamlit as st
 from bs4 import BeautifulSoup
-#from PIL import Image
 import pyqrcode
 import png
 
