@@ -33,7 +33,7 @@ with col1:
         st.markdown(showImg, unsafe_allow_html=True)
         st.caption('Picture 1 of 2')   
     else:       
-        st.image(sImg2, caption='LEGO Harry Potter' width=240)
+        st.image(sImg2, caption='LEGO Harry Potter', width=240)
         st.caption('Picture 2 of 2')
 
 with col2:
