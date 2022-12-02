@@ -52,4 +52,4 @@ with col2:
     file_name = '403826614108'            
     url.png(f'pages/ebay{file_name}.png', scale = 6)
     #st.image(f'pages/ebay{file_name}', width=200)
-    url.show()
+    st.write(url.show())
