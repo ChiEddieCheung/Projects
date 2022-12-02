@@ -1,7 +1,8 @@
 import streamlit as st
 from bs4 import BeautifulSoup
-from PIL import Image
-import streamlit.components.v1 as components
+#from PIL import Image
+import pyqrcode
+import cv2
 
 hide_menu = """
     <style>
@@ -32,7 +33,7 @@ with col1:
         st.markdown(showImg, unsafe_allow_html=True)
         st.caption('Picture 1 of 2')   
     else:       
-        st.image(sImg2, width=240)
+        st.image(sImg2, caption='LEGO Harry Potter width=240)
         st.caption('Picture 2 of 2')
 
 with col2:
@@ -45,3 +46,9 @@ with col2:
         </button>
         </a>
     """, unsafe_allow_html=True)
+    
+    st.write('')
+    url = pyqrcode.create(sSite)        
+    file_name = '403826614108'               
+    url.png(f'ebay{file_name}.png', scale = 6)
+    st.image(f'ebay{file_name}', width=200)
