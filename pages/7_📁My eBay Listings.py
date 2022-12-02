@@ -51,5 +51,4 @@ with col2:
     url = pyqrcode.create(sSite)     
     file_name = '403826614108'            
     url.png(f'pages/ebay{file_name}.png', scale = 6)
-    #st.image(f'pages/ebay{file_name}', width=200)
-    st.write(url.show())
+    st.image(f'pages/ebay{file_name}.png', width=200)
