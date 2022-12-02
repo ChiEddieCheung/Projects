@@ -50,6 +50,6 @@ with col2:
     st.write('')
     url = pyqrcode.create(sSite) 
     st.write(url)       
-    #file_name = '403826614108'            
-    #url.png(f'ebay{file_name}.png', scale = 6)
+    file_name = '403826614108'            
+    url.png(f'ebay{file_name}.png', scale = 6)
     #st.image(f'ebay{file_name}', width=200)
