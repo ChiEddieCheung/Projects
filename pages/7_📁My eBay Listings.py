@@ -3,6 +3,11 @@ from bs4 import BeautifulSoup
 import pyqrcode
 import png
 
+st.set_page_config(
+    page_title="My eBay Listings",
+    layout = "wide",    
+)
+
 hide_menu = """
     <style>
         #MainMenu {Visibility: Hidden}
