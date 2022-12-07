@@ -21,7 +21,7 @@ html_temp = """
 st.markdown(html_temp.format('lightblue','black'),unsafe_allow_html=True)
 
 with st.expander("About the App", expanded=True):
-    st.subheader("The network graph app was built with Streamlit and Plotly to generate an interactive" \
+    st.write("##### The network graph app was built with Streamlit and Plotly to generate an interactive" \
                 " network graph with different layout choices.")
     
     uploaded_file = st.file_uploader('Select a file:',type=['csv'], help='Select only CSV file with 2 columns of data')    
