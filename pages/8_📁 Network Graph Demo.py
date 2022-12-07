@@ -20,7 +20,7 @@ html_temp = """
 """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
-with st.expander("**_*About the App**_*", expanded=True):
+with st.expander("** *About the App** *", expanded=True):
     st.write("##### The network graph app was built with Streamlit and Plotly to generate an interactive" \
                 " network graph with different layout choices.")
     
