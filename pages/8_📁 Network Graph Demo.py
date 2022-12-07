@@ -20,7 +20,7 @@ html_temp = """
     """
 st.markdown(html_temp.format('lightblue','black'),unsafe_allow_html=True)
 
-with st.expander("# About the App", expanded=True):
+with st.expander("About the App", expanded=True):
     st.write("##### The network graph app was built with Streamlit and Plotly to generate an interactive" \
                 " network graph with different layout choices.")
     
@@ -43,11 +43,11 @@ if uploaded_file is not None:
         #Create three input widgets that allow users to specify their preferred layout and color schemes
         col1, col2, col3 = st.columns( [1, 1, 1])
         with col1:
-            layout= st.selectbox('Choose a network layout',('Random Layout','Spring Layout','Shell Layout','Spectral Layout'), 2)
+            layout= st.selectbox('Choose a network layout:',('Random Layout','Spring Layout','Shell Layout','Spectral Layout'), 2)
         with col2:
-            color=st.selectbox('Choose color of the nodes', ('Blue','Red','Green','Rainbow','Red-Blue'), 0)      
+            color=st.selectbox('Choose color of the nodes:', ('Blue','Red','Green','Rainbow','Red-Blue'), 0)      
         with col3:
-            title=st.text_input('Add a chart title')
+            title=st.text_input('Add a chart title:')
 
         #Get the position of each node depending on the user' choice of layout
         if layout=='Random Layout':
