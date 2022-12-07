@@ -17,8 +17,8 @@ html_temp = """
     <div style="background-color:{};padding:5px;border-radius:8px">
     <h1 style="color:{};text-align: center;font-size: 28px">Simple Network Graph Demo</h1>
     </div><br>
-    """
-st.markdown(html_temp.format('lightblue','black'),unsafe_allow_html=True)
+"""
+st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 with st.expander("About the App", expanded=True):
     st.write("##### The network graph app was built with Streamlit and Plotly to generate an interactive" \
