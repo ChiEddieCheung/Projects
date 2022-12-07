@@ -5,6 +5,11 @@ import networkx as nx
 import plotly.graph_objs as go
 from  PIL import Image
 
+st.set_page_config(
+    page_title="Simple Network Graph Demo",
+    layout = "wide",    
+)
+
 hide_menu = """
     <style>
         #MainMenu {Visibility: Hidden}
