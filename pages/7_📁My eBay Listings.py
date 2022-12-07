@@ -20,7 +20,7 @@ st.caption('*Page under construction*')
 st.info('#### My eBay Listings')
 
 sSite = "https://www.ebay.com/itm/403826614108"
-sImg = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
+sImg1 = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
 sImg2 = "https://i.ebayimg.com/images/g/Ha0AAOSwg8FiWZJV/s-l500.jpg"
 
 col1, col2 = st.columns([3,5], gap='medium')
@@ -30,11 +30,13 @@ with col1:
     val = st.slider('Slide to select picture:', 1, 2, 1)
 
     if val == 1:    
-        showImg = f"""
-            <img src={sImg} 
-            width="160" height="240" alt="LEGO Harry Potter">
-        """
-        st.markdown(showImg, unsafe_allow_html=True)
+        #showImg = f"""
+        #    <img src={sImg} 
+        #    width="160" height="240" alt="LEGO Harry Potter">
+        #"""
+        #st.markdown(showImg, unsafe_allow_html=True)
+        
+        st.image(sImg1, caption='LEGO Harry Potter', width=160)
         st.caption('Picture 1 of 2')   
     else:       
         st.image(sImg2, caption='LEGO Harry Potter', width=240)
