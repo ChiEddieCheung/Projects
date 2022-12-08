@@ -53,10 +53,10 @@ with col2:
         </a>
     """, unsafe_allow_html=True)
     
-    for i in range(3):
+    for i in range(2):
         st.write('')
         
-    st.text('or scan the QR code below:')
+    st.caption('or scan the QR code below:')
     url = pyqrcode.create(sSite)     
     file_name = '403826614108'            
     url.png(f'ebay{file_name}.png', scale = 6)
