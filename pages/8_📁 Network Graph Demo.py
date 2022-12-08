@@ -26,13 +26,12 @@ html_temp = """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 with st.expander("***About the App***", expanded=True):
-    st.write("##### The network graph app was built with Streamlit and Plotly to generate an interactive" \
+    st.write("##### This app was built with Streamlit and Plotly to generate an interactive" \
                 " network graph with different layout choices.")
     
     uploaded_file = st.file_uploader('Select a file:',type=['csv'], help='Select only CSV file with 2 columns of data')    
  
-if uploaded_file is not None:  
-    try:   
+if uploaded_file is not None:   
         df=pd.read_csv(uploaded_file)  
         A = list(df["Source"].unique())
         B = list(df["Target"].unique())
@@ -137,5 +136,5 @@ if uploaded_file is not None:
                         yaxis=dict(showgrid=False, zeroline=False, showticklabels=False)))
 
         st.plotly_chart(fig, use_container_width=True) #Show the graph in streamlit
-    except:
-        st.error('\N{cross mark} Invalid data structure: Only 2 columns of data allowed')
+    #except:
+    #    st.error('\N{cross mark} Invalid data structure: Only 2 columns of data allowed')
