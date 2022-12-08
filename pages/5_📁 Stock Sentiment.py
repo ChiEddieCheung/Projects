@@ -34,10 +34,10 @@ if search == True or symbol != '':
         data = requests.get(url).json()  
 
         if 'Price' in st.session_state:
-            Stock_Price = st.session_state['Price']
+            Stock_Price = '$' + st.session_state['Price']
         else:
             Stock_Price = ''
-        st.success(f"###### {data['symbol']['title']} \n ${Stock_Price}")
+        st.success(f"###### {data['symbol']['title']} \n {Stock_Price}")
 
         df = pd.DataFrame()     #Initialize blank data frame        
     
