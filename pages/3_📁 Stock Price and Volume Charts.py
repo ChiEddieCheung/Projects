@@ -28,6 +28,7 @@ search = st.button('Search', key={ticker_sym})
 ticker_Data = yf.Ticker(ticker_sym)
 
 info = yf.Ticker(ticker_sym).info
+st.write(info)
 if info:
     if info['regularMarketPrice']:    
         Stock_Name = info['shortName']
@@ -42,5 +43,5 @@ if info:
 
         st.line_chart(tickerDf.Close)
         st.line_chart(tickerDf.Volume)
-    else:
+    elif info['regularMarketPrice'] == 'None':
         st.write('\N{cross mark} Stock ticker not found!')
