@@ -53,7 +53,7 @@ with col2:
         </a>
     """, unsafe_allow_html=True)
     
-    for i = 1 to 3:
+    for i in range(3):
         st.write('')
         
     st.text('or scan the QR code below:')
