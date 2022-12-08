@@ -22,9 +22,9 @@ ticker_sym = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker_sym})
 ticker_Data = yf.Ticker(ticker_sym)
 
+st.write(ticker_data)
 info = yf.Ticker(ticker_sym).info
 if info:
-    st.write(info)
     if 'shortName' in info:
         Stock_Name = info['shortName']
 
