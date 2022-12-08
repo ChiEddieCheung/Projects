@@ -25,11 +25,12 @@ st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 ticker_sym = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker_sym})
-ticker_Data = yf.Ticker(ticker_sym)
 
-info = yf.Ticker(ticker_sym).info
-st.write(info)
-if info:
+if search or ticker_sym:
+    ticker_Data = yf.Ticker(ticker_sym)
+
+    info = yf.Ticker(ticker_sym).info
+    st.write(info)
     if info['regularMarketPrice']:    
         Stock_Name = info['shortName']
         Stock_Price = info['regularMarketPrice']
