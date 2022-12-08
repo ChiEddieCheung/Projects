@@ -23,7 +23,7 @@ symbol = ''
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
 if symbol or search:
-    try:
+    #try:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json() 
         
@@ -40,5 +40,5 @@ if symbol or search:
             st.write(message['created_at'])
             st.write(message['body'])        
             st.write('___')                
-    except:
-        st.write('\N{cross mark} Stock ticker not found!')
+    #except:
+    #    st.write('\N{cross mark} Stock ticker not found!')
