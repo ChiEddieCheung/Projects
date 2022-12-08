@@ -53,7 +53,9 @@ with col2:
         </a>
     """, unsafe_allow_html=True)
     
-    st.write('')
+    for i in 3
+        st.write('')
+        
     st.text('or scan the QR code below:')
     url = pyqrcode.create(sSite)     
     file_name = '403826614108'            
