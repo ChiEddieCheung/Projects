@@ -30,7 +30,6 @@ if search or ticker_sym:
     ticker_Data = yf.Ticker(ticker_sym)
 
     info = yf.Ticker(ticker_sym).info
-    st.write(info)
     if info['regularMarketPrice']:    
         Stock_Name = info['shortName']
         Stock_Price = info['regularMarketPrice']
