@@ -17,7 +17,12 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 url = 'http://api.tvmaze.com/singlesearch/shows'
 
-st.info('#### TV Show Lookup')
+html_temp = """
+    <div style="background-color:{};padding:5px;border-radius:8px">
+    <h1 style="color:{};text-align: center;font-size: 24px">TV Show Lookup</h1>
+    </div><br>
+"""
+st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 show_name = st.text_input('Enter a TV show name:')
 search = st.button('Search', key={show_name})
