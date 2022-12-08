@@ -16,7 +16,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.caption('*Page under construction*')
+st.caption('(*Page under construction*)')
 
 #st.info('#### My eBay Listings')
 html_temp = """
