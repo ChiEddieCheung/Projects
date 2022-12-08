@@ -24,6 +24,7 @@ ticker_Data = yf.Ticker(ticker_sym)
 
 info = yf.Ticker(ticker_sym).info
 if info:
+    st.write(info)
     if 'shortName' in info:
         Stock_Name = info['shortName']
 
