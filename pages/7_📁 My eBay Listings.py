@@ -18,7 +18,6 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.caption('(*Page under construction*)')
 
-#st.info('#### My eBay Listings')
 html_temp = """
     <div style="background-color:{};padding:5px;border-radius:8px">
     <h1 style="color:{};text-align: center;font-size: 24px">My eBay Listings</h1>
