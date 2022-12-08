@@ -28,10 +28,11 @@ st.write(info)
 if info:
     if 'shortName' in info:
         Stock_Name = info['shortName']
+        Stock_Price = info['regularMarketPrice']
 
 if (ticker_sym != '' or search):
     try:        
-        st.success(f"###### {Stock_Name}")
+        st.success(f"###### {Stock_Name}: ${Stock_Price}")
 
         current_date = datetime.now().date()
 
