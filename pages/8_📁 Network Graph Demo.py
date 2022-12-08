@@ -42,10 +42,11 @@ if uploaded_file is not None:
         for i in node_list:
             G.add_node(i)
         for i,j in df.iterrows():
-            G.add_edges_from([(j["Source"],j["Target"])])    
+            #G.add_edges_from([(j["Source"],j["Target"])])
+            G.add_edges_from([(j.loc[0],j.loc[1])]) 
 
         #Create three input widgets that allow users to specify their preferred layout and color schemes
-        col1, col2, col3 = st.columns( [1, 1, 1])
+        col1, col2, col3 = st.columns(3)
         with col1:
             layout= st.selectbox('Choose a network layout:',('Random Layout','Spring Layout','Shell Layout','Spectral Layout'), 2)
         with col2:
@@ -119,7 +120,7 @@ if uploaded_file is not None:
             node_trace['y'] += tuple([y])
 
         for node, adjacencies in enumerate(G.adjacency()):
-            node_trace['marker']['color']+=tuple([len(adjacencies[1])]) #Coloring each node based on the number of connections 
+            node_trace['marker']['color']+=tuple([len(adjacencies[1])])
             node_info = adjacencies[0] +' # of connections: '+str(len(adjacencies[1]))
             node_trace['text']+=tuple([node_info])
         
