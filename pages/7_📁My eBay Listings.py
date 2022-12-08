@@ -54,6 +54,7 @@ with col2:
     """, unsafe_allow_html=True)
     
     st.write('')
+    st.write('##### or scan the QR code below:')
     url = pyqrcode.create(sSite)     
     file_name = '403826614108'            
     url.png(f'ebay{file_name}.png', scale = 6)
