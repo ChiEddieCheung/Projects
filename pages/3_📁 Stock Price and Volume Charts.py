@@ -37,5 +37,5 @@ if info:
 
         st.line_chart(tickerDf.Close)
         st.line_chart(tickerDf.Volume)
-    else:
-        st.write('\N{cross mark} Stock ticker not found!')
+else:
+    st.write('\N{cross mark} Stock ticker not found!')
