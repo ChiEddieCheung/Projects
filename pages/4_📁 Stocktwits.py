@@ -27,7 +27,12 @@ if symbol or search:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json() 
         
-        st.success(f"###### {data['symbol']['title']}")        
+        if 'Price' not in st.session_state:
+            Stock_Price = st.session_state['Price']
+        else:
+            Stock_Price = ''
+
+        st.success(f"###### {data['symbol']['title']} \n ${Stock_Price}")        
 
         for message in data['messages']:                  
             st.image(message['user']['avatar_url'])
