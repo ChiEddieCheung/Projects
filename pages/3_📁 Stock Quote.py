@@ -23,7 +23,7 @@ search = st.button('Search', key={ticker_sym})
 #ticker_Data = yf.Ticker(ticker_sym)
 
 info = yf.Ticker(ticker_sym).info
-if info is not None:
+if info is not none:
     if 'shortName' in info:
         Stock_Name = info['shortName']
         Stock_Price = info['regularMarketPrice']
