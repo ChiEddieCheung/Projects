@@ -25,7 +25,8 @@ search = st.button('Search', key={symbol})
 if symbol or search:
     try:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
-        data = r.json()    
+        data = r.json() 
+        st.write(data)
         
         st.success(f"###### {data['symbol']['title']}")        
 
