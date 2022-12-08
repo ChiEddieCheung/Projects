@@ -17,7 +17,14 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 st.caption('*Page under construction*')
-st.info('#### My eBay Listings')
+
+#st.info('#### My eBay Listings')
+html_temp = """
+    <div style="background-color:{};padding:5px;border-radius:8px">
+    <h1 style="color:{};text-align: center;font-size: 24px">My eBay Listings</h1>
+    </div><br>
+"""
+st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 sSite = "https://www.ebay.com/itm/403826614108"
 sImg1 = "https://i.ebayimg.com/images/g/m-EAAOSwl1diWZJN/s-l500.jpg"
