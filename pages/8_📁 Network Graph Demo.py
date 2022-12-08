@@ -32,7 +32,7 @@ with st.expander("***About the App***", expanded=True):
     uploaded_file = st.file_uploader('Select a file:',type=['csv'], help='Select only CSV file with 2 columns of data')    
  
 if uploaded_file is not None:   
-        df=pd.read_csv(uploaded_file, on_bad_lines='skip')  
+        df=pd.read_csv(uploaded_file)  
         A = list(df['Source'].unique())
         B = list(df['Target'].unique())
         node_list = set(A+B)
