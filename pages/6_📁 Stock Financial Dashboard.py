@@ -67,8 +67,13 @@ search = st.button('Search', key={ticker})
 if search or ticker:
     company = Company(ticker)                
     company.get_profit_margins()        
+    
+    if 'Price' in st.session_state:
+        Stock_Price = st.session_state['Price']
+    else:
+        Stock_Price = ''
+    st.success(f"##### {si.get_quote_data(ticker)['shortName']} \n ${Stock_Price}")
         
-    st.success(f"##### {si.get_quote_data(ticker)['shortName']}")
     st.write('##### Company Overview')
 
     company_info = si.get_company_info(ticker)
