@@ -27,14 +27,14 @@ st.info('#### Stock Sentiment')
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
 
-if search == True or symbol != '':
+if search True or symbol:
     url = 'https://api.stocktwits.com/api/2/streams/symbol/{}.json'.format(symbol)
     
     try:
         data = requests.get(url).json()  
 
         if 'Price' in st.session_state:
-            Stock_Price = '$' + st.session_state['Price']
+            Stock_Price = '$' + str(st.session_state['Price'])
         else:
             Stock_Price = ''
         st.success(f"###### {data['symbol']['title']} \n {Stock_Price}")
