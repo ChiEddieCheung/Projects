@@ -27,7 +27,7 @@ if symbol or search:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json() 
         
-        if 'Price' not in st.session_state:
+        if 'Price' in st.session_state:
             Stock_Price = st.session_state['Price']
         else:
             Stock_Price = ''
