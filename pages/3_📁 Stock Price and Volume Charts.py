@@ -43,5 +43,5 @@ if info:
 
         st.line_chart(tickerDf.Close)
         st.line_chart(tickerDf.Volume)
-    elif info['regularMarketPrice'] == 'None':
+    elif info['regularMarketPrice'] is None:
         st.write('\N{cross mark} Stock ticker not found!')
