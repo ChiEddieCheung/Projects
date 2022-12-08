@@ -28,7 +28,7 @@ if info:
         Stock_Name = info['shortName']
         Stock_Price = info['regularMarketPrice']
         
-        st.success(f"###### {Stock_Name}  \t\t\t ${Stock_Price}")
+        st.success(f"###### {Stock_Name}  \t \t \t ${Stock_Price}")
 
         current_date = datetime.now().date()
 
