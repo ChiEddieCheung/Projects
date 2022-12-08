@@ -28,7 +28,7 @@ if symbol or search:
         data = r.json() 
         
         if 'Price' in st.session_state:
-            Stock_Price = '$' + st.session_state['Price']
+            Stock_Price = '$' + str(st.session_state['Price'])
         else:
             Stock_Price = ''
 
