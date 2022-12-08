@@ -45,26 +45,24 @@ if uploaded_file is not None:
             #G.add_edges_from([(j["Source"],j["Target"])])
             G.add_edges_from([(j[0],j[1])]) 
 
-        #Create three input widgets that allow users to specify their preferred layout and color schemes
+        #Create 3 input columns that allow user to specify preferred layout and color schemes
         col1, col2, col3 = st.columns(3)
         with col1:
-            layout= st.selectbox('Choose a network layout:',('Random Layout','Spring Layout','Shell Layout','Spectral Layout'), 2)
+            layout= st.selectbox('Choose a network layout:',('Random Layout','Spring Layout','Shell Layout'), 2)
         with col2:
             color=st.selectbox('Choose color of the nodes:', ('Blue','Red','Green','Rainbow','Red-Blue'), 0)      
         with col3:
             title=st.text_input('Add a chart title:')
 
-        #Get the position of each node depending on the user' choice of layout
+        #Get the position of each node based on the user's choice of layout
         if layout=='Random Layout':
             pos = nx.random_layout(G) 
         elif layout=='Spring Layout':
             pos = nx.spring_layout(G, k=5, iterations=50)
         elif  layout=='Shell Layout':
             pos = nx.shell_layout(G)            
-        elif  layout=='Spectral Layout':
-            pos = nx.spectral_layout(G) 
-
-        #Use different color schemes for the node colors depending on he user input
+      
+        #Use different color schemes for node colors based on he user input
         if color=='Blue':
             colorscale='blues'    
         elif color=='Red':
