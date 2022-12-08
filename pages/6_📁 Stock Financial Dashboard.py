@@ -58,8 +58,12 @@ class Company:
         self.profit_margin_dict = {
             'Value':[self.gross_margin, self.operating_margin, self.net_margin]
             }    
-
-st.info('#### Stock Financial Dashboard')
+html_temp = """
+    <div style="background-color:{};padding:5px;border-radius:8px">
+    <h1 style="color:{};text-align: center;font-size: 24px">Stock Financial Dashboard</h1>
+    </div><br>
+"""
+st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker})
