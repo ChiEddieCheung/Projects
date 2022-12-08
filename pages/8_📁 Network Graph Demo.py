@@ -43,7 +43,7 @@ if uploaded_file is not None:
             G.add_node(i)
         for i,j in df.iterrows():
             #G.add_edges_from([(j["Source"],j["Target"])])
-            G.add_edges_from([(j.loc[0],j.loc[1])]) 
+            G.add_edges_from([(j[0],j[1])]) 
 
         #Create three input widgets that allow users to specify their preferred layout and color schemes
         col1, col2, col3 = st.columns(3)
