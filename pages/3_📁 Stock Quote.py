@@ -20,7 +20,7 @@ st.info('#### Stock Price and Volume Charts')
 
 ticker_sym = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker_sym})
-#ticker_Data = yf.Ticker(ticker_sym)
+ticker_Data = yf.Ticker(ticker_sym)
 
 info = yf.Ticker(ticker_sym).info
 if info:
