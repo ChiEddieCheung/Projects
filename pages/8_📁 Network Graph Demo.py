@@ -33,8 +33,8 @@ with st.expander("***About the App***", expanded=True):
  
 if uploaded_file is not None:   
         df=pd.read_csv(uploaded_file)  
-        A = list(df['Source'].unique())
-        B = list(df['Target'].unique())
+        A = list(df[0].unique())
+        B = list(df[1].unique())
         node_list = set(A+B)
         G = nx.Graph() #Use the Graph API to create an empty network graph object
         
