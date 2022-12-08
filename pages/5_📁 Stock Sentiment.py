@@ -22,7 +22,12 @@ hide_menu = """
 """#
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.info('#### Stock Sentiment')
+html_temp = """
+    <div style="background-color:{};padding:5px;border-radius:8px">
+    <h1 style="color:{};text-align: center;font-size: 24px">Stock Sentiment</h1>
+    </div><br>
+"""
+st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
