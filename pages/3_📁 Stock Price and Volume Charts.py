@@ -24,19 +24,18 @@ ticker_Data = yf.Ticker(ticker_sym)
 
 info = yf.Ticker(ticker_sym).info
 st.write(info)
-if info:
-    if 'shortName' in info:
-        Stock_Name = info['shortName']
-        Stock_Price = info['regularMarketPrice']
-        st.session_state['Price'] = Stock_Price
+if info['regularMarketPrice']:    
+    Stock_Name = info['shortName']
+    Stock_Price = info['regularMarketPrice']
+    st.session_state['Price'] = Stock_Price
 
-        st.success(f"###### {Stock_Name} \n ${Stock_Price}")
+    st.success(f"###### {Stock_Name} \n ${Stock_Price}")
 
-        current_date = datetime.now().date()
+    current_date = datetime.now().date()
 
-        tickerDf = ticker_Data.history(period='1d', start='2022-01-01', end=current_date)
+    tickerDf = ticker_Data.history(period='1d', start='2022-01-01', end=current_date)
 
-        st.line_chart(tickerDf.Close)
-        st.line_chart(tickerDf.Volume)
+    st.line_chart(tickerDf.Close)
+    st.line_chart(tickerDf.Volume)
 else:
     st.write('\N{cross mark} Stock ticker not found!')
