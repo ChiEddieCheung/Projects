@@ -28,11 +28,11 @@ if symbol or search:
         data = r.json() 
         
         if 'Price' in st.session_state:
-            Stock_Price = st.session_state['Price']
+            Stock_Price = '$' + st.session_state['Price']
         else:
             Stock_Price = ''
 
-        st.success(f"###### {data['symbol']['title']} \n ${Stock_Price}")        
+        st.success(f"###### {data['symbol']['title']} \n {Stock_Price}")        
 
         for message in data['messages']:                  
             st.image(message['user']['avatar_url'])
