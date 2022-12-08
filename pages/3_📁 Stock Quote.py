@@ -23,15 +23,11 @@ search = st.button('Search', key={ticker_sym})
 #ticker_Data = yf.Ticker(ticker_sym)
 
 info = yf.Ticker(ticker_sym).info
-
-st.write(info)
-if info:
+if info is not None:
     if 'shortName' in info:
         Stock_Name = info['shortName']
         Stock_Price = info['regularMarketPrice']
-
-if (ticker_sym != '' or search):
-    try:        
+        
         st.success(f"###### {Stock_Name}: ${Stock_Price}")
 
         current_date = datetime.now().date()
@@ -40,5 +36,5 @@ if (ticker_sym != '' or search):
 
         st.line_chart(tickerDf.Close)
         st.line_chart(tickerDf.Volume)
-    except:
-        st.write('\N{cross mark} Stock ticker not found!')
+    #except:
+    #    st.write('\N{cross mark} Stock ticker not found!')
