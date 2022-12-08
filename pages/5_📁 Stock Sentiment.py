@@ -27,7 +27,7 @@ st.info('#### Stock Sentiment')
 symbol = st.text_input("Enter a stock ticker:", max_chars=5)
 search = st.button('Search', key={symbol})
 
-if search True or symbol:
+if search or symbol:
     url = 'https://api.stocktwits.com/api/2/streams/symbol/{}.json'.format(symbol)
     
     try:
