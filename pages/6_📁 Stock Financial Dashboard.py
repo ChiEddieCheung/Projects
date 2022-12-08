@@ -68,12 +68,12 @@ if search or ticker:
     company = Company(ticker)                
     company.get_profit_margins()        
     
-    st.write(si.get_quote_data(ticker))
+    #st.write(si.get_quote_data(ticker))
     
     if 'Price' in st.session_state:
         Stock_Price = '$' + st.session_state['Price']
     else:
-        Stock_Price = ''
+        Stock_Price = '$' + si.get_quote_data(ticker)['regularMarketPrice']
     st.success(f"##### {si.get_quote_data(ticker)['shortName']} \n {Stock_Price}")
         
     st.write('##### Company Overview')
