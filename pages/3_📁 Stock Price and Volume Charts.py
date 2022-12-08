@@ -24,7 +24,7 @@ ticker_Data = yf.Ticker(ticker_sym)
 
 info = yf.Ticker(ticker_sym).info
 if info:
-    if 'shortName' in info or 'shortName' is not 'NONE':
+    if 'shortName' in info or 'shortName' is not 'None':
         Stock_Name = info['shortName']
         Stock_Price = info['regularMarketPrice']
         st.session_state['Price'] = Stock_Price
