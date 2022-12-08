@@ -41,8 +41,8 @@ if search == True or symbol != '':
             if i < 30:
                 msg = data['messages'][i]            
                 twitter = msg['user']['username']
-                #followers = f"{msg['user']['username']} has {msg['user']['followers']}"
                 followers = msg['user']['followers']
+                
                 try:
                     sentiment = msg['entities']['sentiment']['basic']
                 except:
