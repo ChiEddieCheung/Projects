@@ -27,7 +27,8 @@ if info:
     if 'shortName' in info:
         Stock_Name = info['shortName']
         Stock_Price = info['regularMarketPrice']
-        
+        st.session_state['Price'] = Stock_Price
+
         st.success(f"###### {Stock_Name} \n ${Stock_Price}")
 
         current_date = datetime.now().date()
