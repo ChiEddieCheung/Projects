@@ -49,8 +49,7 @@ with col1:
         st.caption('Picture 2 of 2')
 
 with col2:
-    st.write('##### LEGO Harry Potter Hogwarts Moment: Potions Class (76383)')
-    #if st.button('View Detail...'):
+    st.write('##### LEGO Harry Potter Hogwarts Moment: Potions Class (76383)')    
     st.markdown(f"""
         <a href={sSite}>
         <button class=button>
@@ -59,10 +58,9 @@ with col2:
         </a>
     """, unsafe_allow_html=True)
     
-    for i in range(2):
-        st.write('')
+    st.write('')
         
-    st.caption('or scan the QR code below to show product details:')
+    st.caption('or scan the QR code below to see product details:')
     url = pyqrcode.create(sSite)     
     file_name = '403826614108'            
     url.png(f'ebay{file_name}.png', scale = 6)
