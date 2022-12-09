@@ -68,7 +68,7 @@ st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker})
 
-if search or ticker:
+if or ticker:
     company = Company(ticker)                
     company.get_profit_margins()        
     
@@ -108,7 +108,6 @@ if search or ticker:
             st.table(profit_margin_df)
                 
             profit_margin_df = pd.DataFrame(company.profit_margin_dict, index = profit_margin_index)
-            st.bar_chart(profit_margin_df)                   
-    
+            st.bar_chart(profit_margin_df)                       
     #except:
         #st.write('\N{cross mark} Stock ticker not found!')
