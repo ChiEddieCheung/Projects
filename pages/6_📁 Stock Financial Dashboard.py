@@ -79,6 +79,7 @@ if ticker:
             Stock_Price = '$' + str(st.session_state['Price'])
         else:
             Stock_Price = '$' + str(si.get_quote_data(ticker)['regularMarketPrice'])
+            st.session_state['Price'] = Stock_Price
         st.success(f"##### {si.get_quote_data(ticker)['shortName']} \n {Stock_Price}")
 
         st.write('##### Company Overview')
