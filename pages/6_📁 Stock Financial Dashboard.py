@@ -67,12 +67,11 @@ html_temp = """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
-ticker = str(ticker)
 search = st.button('Search', key={ticker})
 
-company = []
+company = []&7
 if search or ticker:
-    #company = Company(ticker)                
+    company = Company(ticker)                
     company.get_profit_margins()        
 
     Stock_Price = str(si.get_quote_data(ticker)['regularMarketPrice'])
