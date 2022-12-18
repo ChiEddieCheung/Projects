@@ -24,7 +24,7 @@ html_temp = """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
-search = st.button('Search', key={ticker_sym})
+search = st.button('Search', key={ticker})
 
 if ticker or search:
     ticker_Data = yf.Ticker(ticker)
