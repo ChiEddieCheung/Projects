@@ -23,13 +23,14 @@ html_temp = """
 """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
-ticker_sym = st.text_input('Enter a stock ticker:', max_chars=5)
+ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker_sym})
 
-if ticker_sym or search:
-    ticker_Data = yf.Ticker(ticker_sym)
+if ticker or search:
+    ticker_Data = yf.Ticker(ticker)
+    st.write(ticker)
 
-    info = yf.Ticker(ticker_sym).info
+    info = yf.Ticker(ticker).info
     if info['regularMarketPrice']:    
         Stock_Name = info['shortName']
         Stock_Price = info['regularMarketPrice']
