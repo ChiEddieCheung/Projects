@@ -31,7 +31,7 @@ if ticker or search:
     st.write(ticker_Data)
 
     info = yf.Ticker(ticker).info
-    if info['regularMarketPrice']:    
+    #if info['regularMarketPrice']:    
         Stock_Name = info['shortName']
         Stock_Price = info['regularMarketPrice']
         st.session_state['Price'] = Stock_Price
@@ -44,5 +44,5 @@ if ticker or search:
 
         st.line_chart(tickerDf.Close)
         st.line_chart(tickerDf.Volume)
-    elif info['regularMarketPrice'] is None:
-        st.write('\N{cross mark} Stock ticker not found!')
+    #elif info['regularMarketPrice'] is None:
+       # st.write('\N{cross mark} Stock ticker not found!')
