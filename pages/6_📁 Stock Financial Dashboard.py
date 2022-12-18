@@ -23,7 +23,7 @@ class Company:
         dt.timedelta(days=365), dt.datetime.date(dt.datetime.now()))
 
         self.overview_df = si.get_stats(ticker)
-        self.overview_df = overview_df.set_index('Attribute')
+        self.overview_df = self.overview_df.set_index('Attribute')
         self.overview_dict = si.get_quote_table(ticker)
         
         self.income_statement = si.get_income_statement(ticker)
@@ -68,7 +68,7 @@ st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker})
-
+st.write(ticker)
 if search or ticker:
     company = Company(ticker)                
     company.get_profit_margins()        
