@@ -67,6 +67,7 @@ html_temp = """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
+ticker = str(ticker)
 search = st.button('Search', key={ticker})
 
 if search or ticker:
