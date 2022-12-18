@@ -70,6 +70,7 @@ ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 ticker = str(ticker)
 search = st.button('Search', key={ticker})
 
+company = []
 if search or ticker:
     company = Company(ticker)                
     company.get_profit_margins()        
