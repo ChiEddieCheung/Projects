@@ -26,7 +26,7 @@ class Company:
         overview_df = overview_df.set_index('Attribute')
         overview_dict = si.get_quote_table(ticker)
         
-        #income_statement = si.get_income_statement(ticker)
+        self.income_statement = si.get_income_statement(ticker)
        
         self.year_end = overview_df.loc['Fiscal Year Ends'][0]        
         
@@ -69,7 +69,6 @@ st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker})
 
-company = []
 if search or ticker:
     company = Company(ticker)                
     company.get_profit_margins()        
