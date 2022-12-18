@@ -71,6 +71,7 @@ search = st.button('Search', key={ticker})
 if search or ticker:
     
         company = Company(ticker)                
+        st.write(company)
         company.get_profit_margins()        
 
         Stock_Price = si.get_quote_data(ticker)['regularMarketPrice']
