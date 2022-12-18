@@ -68,9 +68,9 @@ st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 search = st.button('Search', key={ticker})
-st.write(ticker)
+
 if search or ticker:
-    company = Company(ticker)                
+    company = si.get_data(ticker)                
     company.get_profit_margins()        
 
     Stock_Price = str(si.get_quote_data(ticker)['regularMarketPrice'])
