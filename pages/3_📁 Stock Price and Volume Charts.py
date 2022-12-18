@@ -28,7 +28,7 @@ search = st.button('Search', key={ticker})
 
 if ticker or search:
     ticker_Data = yf.Ticker(ticker)
-    st.write(ticker)
+    st.write(ticker_Data)
 
     info = yf.Ticker(ticker).info
     if info['regularMarketPrice']:    
