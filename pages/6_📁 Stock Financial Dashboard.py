@@ -26,7 +26,7 @@ class Company:
         overview_df = overview_df.set_index('Attribute')
         overview_dict = si.get_quote_table(ticker)
         
-        income_statement = si.get_income_statement(ticker)
+        #income_statement = si.get_income_statement(ticker)
        
         self.year_end = overview_df.loc['Fiscal Year Ends'][0]        
         
