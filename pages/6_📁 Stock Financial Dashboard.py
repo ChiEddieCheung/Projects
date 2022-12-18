@@ -22,9 +22,9 @@ class Company:
         price_df = si.get_data(ticker, dt.datetime.now() -
         dt.timedelta(days=365), dt.datetime.date(dt.datetime.now()))
 
-        overview_df = si.get_stats(ticker)
-        overview_df = overview_df.set_index('Attribute')
-        overview_dict = si.get_quote_table(ticker)
+        self.overview_df = si.get_stats(ticker)
+        self.overview_df = overview_df.set_index('Attribute')
+        self.overview_dict = si.get_quote_table(ticker)
         
         self.income_statement = si.get_income_statement(ticker)
        
