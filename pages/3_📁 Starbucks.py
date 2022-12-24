@@ -23,7 +23,7 @@ html_temp = """
 """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
-df = pd.read_csv('Starbucks Unionization/stores.csv')
+df = pd.read_csv('stores.csv')
 
 # Add Size column for plot bubble size
 df['Size'] = 6
