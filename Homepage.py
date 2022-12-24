@@ -15,7 +15,7 @@ hide_menu = """
         }
         footer:after {
             visibility: visible;
-            content: 'Updated 11/30/2022';
+            content: 'Updated 12/24/2022';
             font-style: italic;
             display: block;    
             text-align: center;
