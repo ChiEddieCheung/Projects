@@ -44,6 +44,8 @@ df2.drop('NLRB Case Number(s)', axis=1, inplace=True)
 df2.drop('lat', axis=1, inplace=True)
 df2.drop('lon', axis=1, inplace=True)
 
+df2 = df2.fillna('')
+
 # Rename Address column
 df2 = df2.rename({'Address': 'Store Address'}, axis=1)
 
