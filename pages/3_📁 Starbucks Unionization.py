@@ -44,6 +44,7 @@ df2.drop('NLRB Case Number(s)', axis=1, inplace=True)
 df2.drop('lat', axis=1, inplace=True)
 df2.drop('lon', axis=1, inplace=True)
 
+# Replace NaN cell values with blank values
 df2 = df2.fillna('')
 
 # Rename Address column
