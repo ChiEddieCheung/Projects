@@ -34,7 +34,8 @@ df.sort_values(by=['Petition File Date'], inplace=True)
 df['Petition File Date'] = \
     pd.to_datetime(df['Petition File Date']).dt.strftime('%m/%d/%Y')
 
-# Make a new dataframe copy
+# Make a new dataframe copy df2 for displaying data
+# Original dataframe df is for creating Plotly map
 df2 = df.copy()
 
 # Drop unnecessary columns
@@ -45,7 +46,22 @@ df2.drop('lon', axis=1, inplace=True)
 
 # Rename Address column
 df2 = df2.rename({'Address': 'Store Address'}, axis=1)
-st.dataframe(df2, use_container_width=True)
+
+# Color each row based on 'Store Status'
+def heatmap(x):                        
+    if (x['Store Status']) == 'Union Win':
+        color = 'lightgreen'
+    elif (x['Store Status']) == 'Union Loss':
+        color = 'tomato'
+    elif (x['Store Status']) == 'Store Closed':
+        color = 'tomato'
+    elif (x['Store Status']) == 'Filed':
+        color = 'yellow'
+    elif (x['Store Status']) == 'Contested':
+        color = 'yellow'
+    return[f'background-color: {color}']*6
+
+st.dataframe(df2.style.apply(heatmap, axis=1), use_container_width=True)
 
 st.markdown("<h5 style='text-align: center;'>Stores Unionization Map</h5>", unsafe_allow_html=True)
 st.markdown("<h6 style='text-align: center;'>(Source: Starbucks Workers United and CNBC)</h6>", unsafe_allow_html=True)
