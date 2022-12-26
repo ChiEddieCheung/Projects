@@ -55,14 +55,14 @@ h1_temp = """
 st.markdown(h1_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 st.write('')
-st.write('##### <center>This site shares my new journey into the world \
+st.write('###### <center>This site shares my new journey into the world \
     of Python programming through different interesting projects written \
     in Streamlit app framework and other Python tools.</center>', unsafe_allow_html=True)
 
 for i in range(5):
     st.write('')
 
-st.write("##### <center>Feel free to check out [My bio]" \
+st.write("###### <center>Feel free to check out [My bio]" \
     "(https://my.indeed.com/p/chichiueddiec-5mgjx37) " \
     "and drop me [some feedbacks or ideas]" \
     "(https://chicheung.streamlit.app/Feedback_Form).</center>", unsafe_allow_html=True)
