@@ -36,7 +36,8 @@ if search or symbol:
     url = 'https://api.stocktwits.com/api/2/streams/symbol/{}.json'.format(symbol)
     
     try:
-        data = requests.get(url).json()  
+        data = requests.get(url).json() 
+        st.write(data) 
 
         if 'Price' in st.session_state:
             Stock_Price = '$' + str(st.session_state['Price'])
