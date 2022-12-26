@@ -39,7 +39,7 @@ def add_background():
              background-attachment: fixed;
              background-size: cover; 
              background-repeat: repeat;
-             background-color: #f9f9f9;
+             background-color: #fbfbfb;
          }}
          </style>
          """,
