@@ -28,7 +28,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-ImgUrl = "https://github.com/ChiEddieCheung/Projects/blob/main/bluewave.png?raw=true"
+ImgUrl = "https://github.com/ChiEddieCheung/Projects/blob/main/blank.png?raw=true"
 def add_bg_from_url():
     st.markdown(
          f"""
@@ -55,7 +55,7 @@ st.markdown(h1_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 st.write('')
 st.write('##### **<center>This site shares my new journey into the world \
     of Python programming through different interesting projects written \
-    in Streamlit app framework </center>**', unsafe_allow_html=True)
+    in Streamlit app framework.</center>**', unsafe_allow_html=True)
 
 for i in range(5):
     st.write('')
