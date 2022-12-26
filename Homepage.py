@@ -34,11 +34,11 @@ def add_background(file):
     bgImg = '''
     <style>
          .stApp {
-             background-image: url(%s);  
-             background-attachment: fixed;
-             background-size: cover; 
-             background-repeat: repeat;
-         }
+          background-image: url(%s);  
+          background-attachment: fixed;
+          background-size: cover; 
+          background-repeat: repeat;
+          }
      </style>
      ''' % ImgUrl
      st.markdown(bgImg, unsafe_allow_html=True)
