@@ -31,6 +31,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 ImgUrl = "https://github.com/ChiEddieCheung/Projects/blob/main/bluewave.png?raw=true"
 def add_background(file):
+    binstr = file
     bgImg = '''
     <style>
          .stApp {
@@ -40,10 +41,10 @@ def add_background(file):
           background-repeat: repeat;
           }
      </style>
-     ''' % ImgUrl
+     ''' % binstr
      st.markdown(bgImg, unsafe_allow_html=True)
 
-add_background()
+add_background(ImgUrl)
 h1_temp = """
     <div style="background-color:{};padding:5px;border-radius:8px">
     <h1 style="color:{};text-align: center;font-size: 28px">Eddie Cheung's Python Study Project</h1>
