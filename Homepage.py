@@ -53,7 +53,7 @@ h1_temp = """
 st.markdown(h1_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 st.write('')
-st.write('##### **This site shares my new journey into the world of Python programming**')
+st.write('##### **<center>This site shares my new journey into the world of Python programming</center>**', unsafe_allow_html=True)
 st.write('##### **through different interesting projects written in Streamlit app framework.**')
 
 for i in range(5):
