@@ -51,10 +51,11 @@ h1_temp = """
     </div><br>
 """
 st.markdown(h1_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
-#st.header("Eddie Cheung's Python Study Project")
 
 st.write('')
-st.write('##### \N{clipboard} The sidebar menu contains apps written in Streamlit Python')       
+#st.write('##### \N{clipboard} The sidebar menu contains apps written in Streamlit Python')
+st.text('This site shares my new journey into the world of Python programming')
+st.text('through different interesting projects written in Streamlit app framework.')
 
 for i in range(5):
     st.write('')
