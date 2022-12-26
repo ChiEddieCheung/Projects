@@ -37,7 +37,6 @@ if search or symbol:
     
     try:
         data = requests.get(url).json() 
-        st.write(data) 
 
         if 'Price' in st.session_state:
             Stock_Price = '$' + str(st.session_state['Price'])
