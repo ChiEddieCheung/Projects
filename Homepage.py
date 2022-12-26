@@ -29,22 +29,22 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-ImgUrl = "https://github.com/ChiEddieCheung/Projects/blob/main/blank.png?raw=true"
-def add_background():
+ImgUrl = "https://github.com/ChiEddieCheung/Projects/blob/main/bluewave.png?raw=true"
+def add_background(file):
     st.markdown(
          f"""
          <style>
-         .stApp {{
-             background-image: url("{ImgUrl}");  
+         .stApp {
+             background-image: url({file});  
              background-attachment: fixed;
              background-size: cover; 
              background-repeat: repeat;
-         }}
+         }
          </style>
          """,
          unsafe_allow_html=True
      )
-add_background() 
+add_background(ImgUrl) 
 
 h1_temp = """
     <div style="background-color:{};padding:5px;border-radius:8px">
