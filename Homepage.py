@@ -29,7 +29,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-ImgUrl = "https://github.com/ChiEddieCheung/Projects/blob/main/blank.png?raw=true"
+ImgUrl = "https://github.com/ChiEddieCheung/Projects/blob/main/bluewave.png?raw=true"
 def add_background():
     st.markdown(
          f"""
