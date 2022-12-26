@@ -34,12 +34,12 @@ def add_background():
     st.markdown(
          f"""
          <style>
-         .stApp {
+         .stApp {{
              background-image: url("{ImgUrl}");  
              background-attachment: fixed;
              background-size: cover; 
              background-repeat: repeat;
-         }
+         }}
          </style>
          """,
          unsafe_allow_html=True
