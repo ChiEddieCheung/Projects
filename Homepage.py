@@ -9,7 +9,7 @@ st.set_page_config(
 
 hide_menu = """
     <style>               
-        #MainMenu {visibility: hidden;}                
+        #MainMenu {visibility: hidden; background-color: aliceblue}                
         footer {
             visibility: hidden;
         }
@@ -29,7 +29,7 @@ hide_menu = """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
 ImgUrl = "https://github.com/ChiEddieCheung/Projects/blob/main/blank.png?raw=true"
-def add_bg_from_url():
+def add_background():
     st.markdown(
          f"""
          <style>
@@ -44,7 +44,7 @@ def add_bg_from_url():
          """,
          unsafe_allow_html=True
      )
-add_bg_from_url() 
+add_background() 
 
 h1_temp = """
     <div style="background-color:{};padding:5px;border-radius:8px">
