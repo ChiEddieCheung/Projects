@@ -35,7 +35,7 @@ def add_background(file):
          f"""
          <style>
          .stApp {
-             background-image: url({file});  
+             background-image: url(file);  
              background-attachment: fixed;
              background-size: cover; 
              background-repeat: repeat;
