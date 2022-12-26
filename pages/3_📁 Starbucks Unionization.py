@@ -59,9 +59,9 @@ def heatmap(x):
     elif (x['Store Status']) == 'Store Closed':
         color = 'tomato'
     elif (x['Store Status']) == 'Filed':
-        color = 'yellow'
+        color = 'gold'
     elif (x['Store Status']) == 'Contested':
-        color = 'yellow'
+        color = 'gold'
     return[f'background-color: {color}']*6
 
 st.dataframe(df2.style.apply(heatmap, axis=1), use_container_width=True)
@@ -73,7 +73,7 @@ st.markdown("<h6 style='text-align: center;'>(Source: Starbucks Workers United a
 Condition_Color = {'Union Win': 'green', \
     'Union Loss': 'red', \
     'Store Closed': 'red', \
-    'Filed': 'yellow', 'Contested': 'yellow'}
+    'Filed': 'gold', 'Contested': 'gold'}
 
 fig = px.scatter_mapbox(df,
     lat = df['lat'],
@@ -108,32 +108,3 @@ fig.update_layout(mapbox_style=selection)
 fig.update_layout(margin={'r':0, 't':0, 'l':0, 'b':0})
 
 st.plotly_chart(fig)
-
-# Plotly graph object method
-#fig = go.Figure()
-
-#df['text'] = df['Address'] + ', ' + df['Store Status']
-
-#fig.add_trace(    
-#    go.Scattergeo(
-#        locationmode = 'USA-states',
-#        lon = df['lon'],
-#        lat = df['lat'],
-#        text = df['text'],    
-#        mode = 'markers',
-#        marker = dict(color=SetColor(df))
-#    )
-#)
-
-#fig.update_layout(
-#    title_text = 'Starbucks Stores Unionization',
-#    margin = dict(
-#        l = 0,
-#        t = 40
-#    ),
-#    width = 900,
-#    height = 577,
-#    geo = dict(
-#        scope = 'usa',
-#    )
-#)
