@@ -61,5 +61,5 @@ for i in range(5):
 
 st.write("###### <center>Feel free to check out [My bio]" \
     "(https://my.indeed.com/p/chichiueddiec-5mgjx37) " \
-    "and drop me [some feedbacks or ideas]" \
+    "and drop me [some feedbacks]" \
     "(https://chicheung.streamlit.app/Feedback_Form).</center>", unsafe_allow_html=True)
