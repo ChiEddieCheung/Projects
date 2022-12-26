@@ -34,15 +34,15 @@ def add_background(file):
     binstr = file
     bgImg = '''
     <style>
-         .stApp {
-          background-image: url(%s);  
-          background-attachment: fixed;
-          background-size: cover; 
-          background-repeat: repeat;
-          }
-     </style>
-     ''' % binstr
-     st.markdown(bgImg, unsafe_allow_html=True)
+        .stApp {
+            background-image: url(%s);  
+            background-attachment: fixed;
+            background-size: cover; 
+            background-repeat: repeat;
+         }
+    </style>
+    ''' % binstr
+    st.markdown(bgImg, unsafe_allow_html=True)
 
 add_background(ImgUrl)
 h1_temp = """
