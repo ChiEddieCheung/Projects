@@ -46,7 +46,7 @@ if ticker:
 
     # The figure has 3 subplots: candlestick, volume, and RSI
     fig = make_subplots(rows=3, cols=1, shared_xaxes=True,
-                        vertical_spacing=0.02,
+                        vertical_spacing=0.03,
                         row_heights=[0.5, 0.2, 0.2])
     
     # Draw candlestick chart
