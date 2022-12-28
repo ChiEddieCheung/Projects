@@ -11,3 +11,4 @@ opencv_python==4.6.0.66
 pypng==0.20220715.0
 networkx==2.8.8
 plotly==5.10.0
+pandas-ta==0.3.14b0
