@@ -82,6 +82,6 @@ if ticker:
     fig.add_hline(y=30, line_dash='dot', fillcolor='gray', row=3, col=1)
     fig.add_hline(y=70, line_dash='dot', fillcolor='gray', row=3, col=1)
 
-    fig.update_yaxes(title='Relative Strength (RSI)', row=3, col=1)
+    fig.update_yaxes(title='RSI', row=3, col=1)
                         
     st.plotly_chart(fig)   
