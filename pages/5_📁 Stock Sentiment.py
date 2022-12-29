@@ -61,7 +61,8 @@ if search or symbol:
         with col2:
             st.metric(label='', value=f'${price}', 
             delta=round(info['regularMarketPrice'] - info['previousClose'], 2))
-
+        
+        st.write('')
         df = pd.DataFrame()     #Initialize blank data frame        
     
         for i in range(0, len(data['messages'])):
