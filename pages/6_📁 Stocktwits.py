@@ -41,7 +41,7 @@ if symbol:
         #    Stock_Price = ''
 
         #st.success(f"###### {data['symbol']['title']} \n {Stock_Price}") 
-        stock = yf.Ticker(ticker)          
+        stock = yf.Ticker(symbol)          
         info = stock.get_info()        
         imgUrl = info['logo_url']
         price = info['regularMarketPrice']
