@@ -44,7 +44,7 @@ search = st.button('Search', key={ticker})
 
 if ticker:    
     stock = yf.Ticker(ticker)
-    st.info(stock.get_info()['shortName'])
+    st.success(stock.get_info()['shortName'])
     df = pd.DataFrame(yf.download(ticker, start=start_date, end=end_date,))             
 
     df['20 EMA'] = ta.ema(close=df['Adj Close'], length=20)
