@@ -19,8 +19,12 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.write('<center><h3>Stock Price Analysis</h3></center>', \
-    unsafe_allow_html=True)
+html_temp = """
+    <div style="background-color:{};padding:5px;border-radius:8px">
+    <h1 style="color:{};text-align:center;font-size:24px">Stock Price Analysis</h1>
+    </div><br>
+"""
+st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 #df = pd.read_csv('main-projects/NEM.csv')
 ticker = st.text_input('Enter a stock ticker:', max_chars=5)
