@@ -83,24 +83,24 @@ if ticker:
         showlegend=False,
         margin={'l':40,'t':30,'b':20,'r':20})
     
-    with col1:
+    colVolume, colRSI = st.columns(2)
+    with colVolume:
         showVolume = st.checkbox('Show Volume Chart', value=True)
     
-    with col2:
+    with colRSI:
         showRSI = st.checkbox('Show RSI Chart', value=True)
 
     # Draw volume bar chart
-    fig.add_trace(go.Bar(x=df.index, y=df['Volume'], showlegend=False), row=2, col=1)
-
-    fig.update_yaxes(title='Volume', row=2, col=1)
+    if showVolume:
+        fig.add_trace(go.Bar(x=df.index, y=df['Volume'], showlegend=False), row=2, col=1)
+        fig.update_yaxes(title='Volume', row=2, col=1)
 
     # Draw RSI line chart
-    fig.add_trace(go.Scatter(x=df.index, y=df['RSI'], line=dict(color='black', width=2),
+    if showRSI:
+        fig.add_trace(go.Scatter(x=df.index, y=df['RSI'], line=dict(color='black', width=2),
                     showlegend=False), row=3, col=1)
-    
-    fig.add_hline(y=30, line_dash='dash', line_color='red', row=3, col=1)
-    fig.add_hline(y=70, line_dash='dash', line_color='red', row=3, col=1)
-
-    fig.update_yaxes(title='RSI', row=3, col=1)
+        fig.add_hline(y=30, line_dash='dash', line_color='red', row=3, col=1)
+        fig.add_hline(y=70, line_dash='dash', line_color='red', row=3, col=1)
+        fig.update_yaxes(title='RSI', row=3, col=1)
                         
     st.plotly_chart(fig)   
