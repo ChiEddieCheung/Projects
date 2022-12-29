@@ -43,8 +43,20 @@ with col2:
 search = st.button('Search', key={ticker})
 
 if ticker:    
-    stock = yf.Ticker(ticker)
+    stock = yf.Ticker(ticker)          
+    info = stock.get_info()        
+    imgUrl = info['logo_url']
+    price = info['regularMarketPrice']
+    
     st.success(stock.get_info()['shortName'])
+
+    col1, col2 = st.columns([1,4])
+    with col1:
+        st.image(imgUrl)
+    with col2:
+        st.metric(label='', value=f'${price}', 
+        delta=round(info['regularMarketPrice'] - info['previousClose'], 2))
+    
     df = pd.DataFrame(yf.download(ticker, start=start_date, end=end_date,))             
 
     df['20 EMA'] = ta.ema(close=df['Adj Close'], length=20)
