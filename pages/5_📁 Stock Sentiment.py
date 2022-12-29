@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import requests
 import warnings
+import yfinance as yf
 
 def colorCell(val):
     if val > 1000:
@@ -45,7 +46,21 @@ if search or symbol:
             Stock_Price = '$' + str(st.session_state['Price'])
         else:
             Stock_Price = ''
-        st.success(f"###### {data['symbol']['title']} \n {Stock_Price}")
+        
+        #st.success(f"###### {data['symbol']['title']} \n {Stock_Price}")
+        stock = yf.Ticker(symbol)
+        info = stock.get_info()
+        
+        imgUrl = info['logo_url']
+        price = info['regularMarketPrice']
+        st.success(data['symbol']['title'])
+
+        col1, col2 = st.columns([1,4])
+        with col1:
+            st.image(imgUrl)
+        with col2:
+            st.metric(label='', value=f'${price}', 
+            delta=round(info['regularMarketPrice'] - info['previousClose'], 2))
 
         df = pd.DataFrame()     #Initialize blank data frame        
     
