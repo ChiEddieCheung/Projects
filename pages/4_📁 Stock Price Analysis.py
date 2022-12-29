@@ -82,6 +82,12 @@ if ticker:
         xaxis_rangeslider_visible=False,
         showlegend=False,
         margin={'l':40,'t':30,'b':20,'r':20})
+    
+    with col1:
+        showVolume = st.checkbox('Show Volume Chart', value=True)
+    
+    with col2:
+        showRSI = st.checkbox('Show RSI Chart', value=True)
 
     # Draw volume bar chart
     fig.add_trace(go.Bar(x=df.index, y=df['Volume'], showlegend=False), row=2, col=1)
