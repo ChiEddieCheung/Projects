@@ -92,8 +92,8 @@ if ticker:
     fig.add_trace(go.Scatter(x=df.index, y=df['RSI'], line=dict(color='black', width=2),
                     showlegend=False), row=3, col=1)
     
-    fig.add_hline(y=30, line_dash='dot', fillcolor='red', row=3, col=1)
-    fig.add_hline(y=70, line_dash='dot', fillcolor='red', row=3, col=1)
+    fig.add_hline(y=30, line_dash='dash', line_color='red', row=3, col=1)
+    fig.add_hline(y=70, line_dash='dash', line_color='red', row=3, col=1)
 
     fig.update_yaxes(title='RSI', row=3, col=1)
                         
