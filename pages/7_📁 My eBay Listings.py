@@ -15,7 +15,7 @@ hide_menu = """
 """
 st.markdown(hide_menu, unsafe_allow_html=True)
 
-st.caption('(*Page under construction*)')
+#st.caption('(*Page under construction*)')
 
 html_temp = """
     <div style="background-color:{};padding:5px;border-radius:8px">
