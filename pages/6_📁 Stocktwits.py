@@ -55,7 +55,7 @@ if symbol:
             st.metric(label='', value=f'${price}', 
             delta=round(info['regularMarketPrice'] - info['previousClose'], 2))
 
-        st.write('')
+        st.write('___')
         for message in data['messages']:                  
             st.image(message['user']['avatar_url'])
             st.write(message['user']['username'])        
