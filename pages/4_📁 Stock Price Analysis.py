@@ -35,7 +35,7 @@ datediff = datetime.timedelta(365)
 col1, col2 = st.columns(2)
 with col1:
     start_date = today - datediff
-    start_date = st.date_input(':sunglasses:[Start Date:]', value=start_date)
+    start_date = st.date_input(':sunglasses:Start Date:', value=start_date)
 with col2:
     end_date = st.date_input('End Date:')
 
