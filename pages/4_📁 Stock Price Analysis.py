@@ -71,9 +71,9 @@ if ticker:
 
     # Add 20 EMA and 50 EMA lines on the chart
     fig.add_trace(go.Scatter(x=df.index, y=df['20 EMA'], 
-        line=dict(color='blue', width=2), name='<br>  20-day MA'))
+        line=dict(color='blue', width=2), name='<b>20-day MA</b>'))
     fig.add_trace(go.Scatter(x=df.index, y=df['50 EMA'],
-        line=dict(color='brown', width=2), name='<br>  50-day MA</p>'))
+        line=dict(color='brown', width=2), name='<b>50-day MA</b>'))
     
     # Remove weekend gaps on the chart
     fig.update_xaxes(rangebreaks=[dict(bounds=['sat','mon'])])
