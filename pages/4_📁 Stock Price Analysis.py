@@ -10,6 +10,15 @@ st.set_page_config(
     page_title = 'Stock Price Analysis',
     layout = 'wide'
 )
+
+hide_menu = """
+    <style>
+        #MainMenu {Visibility: Hidden}
+        footer {Visibility: Hidden}    
+    </style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
+
 st.write('<center><h3>Stock Price Analysis</h3></center>', \
     unsafe_allow_html=True)
 
