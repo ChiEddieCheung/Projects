@@ -26,8 +26,9 @@ html_temp = """
 """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
-#df = pd.read_csv('main-projects/NEM.csv')
-ticker = st.text_input('Enter a stock ticker:', max_chars=5)
+colTicker, colElse = st.columns([1,3])
+with colTicker:
+    ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 
 today = datetime.date.today()
 datediff = datetime.timedelta(365)
@@ -35,7 +36,7 @@ datediff = datetime.timedelta(365)
 col1, col2 = st.columns(2)
 with col1:
     start_date = today - datediff
-    start_date = st.date_input(':sunglasses:Start Date:', value=start_date)
+    start_date = st.date_input('Start Date:', value=start_date)
 with col2:
     end_date = st.date_input('End Date:')
 
