@@ -26,18 +26,16 @@ html_temp = """
 """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
-colTicker, colElse = st.columns([1,3])
-with colTicker:
-    ticker = st.text_input('Enter a stock ticker:', max_chars=5)
-
 today = datetime.date.today()
 datediff = datetime.timedelta(365)
 
-col1, col2, col3 = st.columns([1,1,2])
+col1, col2, col3 = st.columns([1,1,1])
 with col1:
+    ticker = st.text_input('Enter a stock ticker:', max_chars=5)
+with col2:
     start_date = today - datediff
     start_date = st.date_input('Start Date:', value=start_date)
-with col2:
+with col3:
     end_date = st.date_input('End Date:')
 
 search = st.button('Search', key={ticker})
@@ -57,6 +55,7 @@ if ticker:
         st.metric(label='', value=f'${price}', 
         delta=round(info['regularMarketPrice'] - info['previousClose'], 2))
     
+    st.write('')
     df = pd.DataFrame(yf.download(ticker, start=start_date, end=end_date,))             
 
     df['20 EMA'] = ta.ema(close=df['Adj Close'], length=20)
