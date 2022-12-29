@@ -42,10 +42,10 @@ if search or symbol:
     try:
         data = requests.get(url).json() 
 
-        if 'Price' in st.session_state:
-            Stock_Price = '$' + str(st.session_state['Price'])
-        else:
-            Stock_Price = ''
+        #if 'Price' in st.session_state:
+        #    Stock_Price = '$' + str(st.session_state['Price'])
+        #else:
+        #    Stock_Price = ''
         
         #st.success(f"###### {data['symbol']['title']} \n {Stock_Price}")
         stock = yf.Ticker(symbol)
