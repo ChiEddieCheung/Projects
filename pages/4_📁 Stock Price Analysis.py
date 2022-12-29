@@ -83,7 +83,7 @@ if ticker:
         showlegend=False,
         margin={'l':40,'t':30,'b':20,'r':20})
     
-    colVolume, colRSI = st.columns(2)
+    colVolume, colRSI = st.columns(1,3)
     with colVolume:
         showVolume = st.checkbox('Show Volume Chart', value=True)
     
