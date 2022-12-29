@@ -26,7 +26,7 @@ html_temp = """
 """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
-colTicker, colElse = st.columns(2)
+colTicker, colElse = st.columns(4)
 with colTicker:
     ticker = st.text_input('Enter a stock ticker:', max_chars=5)
 
