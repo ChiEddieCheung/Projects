@@ -80,7 +80,7 @@ if ticker:
 
     fig.update_layout(title=f'{ticker.upper()} Candlestick Chart', 
         xaxis_rangeslider_visible=False,
-        width=1000,height=900,showlegend=False,
+        width=1100,height=1000,showlegend=False,
         margin={'l':40,'t':30,'b':20,'r':20})
 
     # Draw volume bar chart
