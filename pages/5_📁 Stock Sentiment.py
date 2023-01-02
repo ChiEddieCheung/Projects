@@ -32,7 +32,7 @@ st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 colTicker, colElse = st.columns([1,3])
 with colTicker:
-    symbol = st.text_input("Enter a stock ticker:", max_chars=5)
+    symbol = st.text_input("Enter a stock ticker:", max_chars=5, key='symbol')
 
 search = st.button('Search', key={symbol})
 
@@ -99,3 +99,5 @@ if search or symbol:
                 " usually have 'Neutral' sentiment.*")
     except:
         st.write('\N{cross mark} Stock ticker not found!')
+    
+    del st.session_state['symbol']
