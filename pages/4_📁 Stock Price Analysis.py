@@ -116,4 +116,4 @@ if ticker:
         fig.update_yaxes(title='RSI', row=3, col=1)
                         
     st.plotly_chart(fig)   
-    ticker = ''
+    ticker = None
