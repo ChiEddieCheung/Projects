@@ -31,7 +31,7 @@ datediff = datetime.timedelta(365)
 
 col1, col2, col3 = st.columns([1,1,1])
 with col1:
-    ticker = st.text_input('Enter a stock ticker:', max_chars=5)
+    ticker = st.text_input('Enter a stock ticker:', max_chars=5, key='ticker')
 with col2:
     start_date = today - datediff
     start_date = st.date_input('Start Date:', value=start_date)
@@ -116,4 +116,4 @@ if ticker:
         fig.update_yaxes(title='RSI', row=3, col=1)
                         
     st.plotly_chart(fig)   
-    ticker = None
+    st.session_state['ticker'] = None
