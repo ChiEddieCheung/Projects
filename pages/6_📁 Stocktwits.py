@@ -27,19 +27,14 @@ st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
 
 colTicker, colElse = st.columns([1,3])
 with colTicker:
-    symbol = st.text_input("Enter a stock ticker:", max_chars=5)
+    symbol = st.text_input("Enter a stock ticker:", max_chars=5, key='symbol')
     
 search = st.button('Search', key={symbol})
 if symbol:
     try:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json() 
-        
-        #if 'Price' in st.session_state:
-        #    Stock_Price = '$' + str(st.session_state['Price'])
-        #else:
-        #    Stock_Price = ''
-
+               
         #st.success(f"###### {data['symbol']['title']} \n {Stock_Price}") 
         stock = yf.Ticker(symbol)          
         info = stock.get_info()        
@@ -64,3 +59,5 @@ if symbol:
             st.write('___')                
     except:
         st.write('\N{cross mark} Stock ticker not found!')
+
+    del st.session_state['symbol']
