@@ -47,7 +47,7 @@ if ticker:
     price = info['regularMarketPrice']
     
     st.success(stock.get_info()['shortName'])
-
+    
     col1, col2 = st.columns([1,4])
     with col1:
         st.image(imgUrl)
@@ -116,3 +116,4 @@ if ticker:
         fig.update_yaxes(title='RSI', row=3, col=1)
                         
     st.plotly_chart(fig)   
+    ticker = ''
