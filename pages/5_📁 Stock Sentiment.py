@@ -42,11 +42,6 @@ if search or symbol:
     try:
         data = requests.get(url).json() 
 
-        #if 'Price' in st.session_state:
-        #    Stock_Price = '$' + str(st.session_state['Price'])
-        #else:
-        #    Stock_Price = ''
-        
         #st.success(f"###### {data['symbol']['title']} \n {Stock_Price}")
         stock = yf.Ticker(symbol)
         info = stock.get_info()
@@ -84,6 +79,7 @@ if search or symbol:
         df = df.rename(columns = {0:'Date Created', 1:'Twitter Name', 2:'Followers', 3:'Sentiment'})        
         df['Date Created'] = pd.to_datetime(df['Date Created']).dt.date
         df = df.reset_index().drop(['index'], axis=1)
+        
         checked = st.checkbox("Check to exclude 'Neutral' sentiment")
         if checked:
             df = df.query('Sentiment != "Neutral"')
