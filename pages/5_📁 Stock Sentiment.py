@@ -36,7 +36,7 @@ with colTicker:
 
 search = st.button('Search', key={symbol})
 
-if search or symbol:
+if symbol:
     url = 'https://api.stocktwits.com/api/2/streams/symbol/{}.json'.format(symbol)
     
     try:
