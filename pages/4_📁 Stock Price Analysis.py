@@ -72,7 +72,7 @@ if ticker:
     # The figure has 3 subplots: candlestick, volume, and RSI
     fig = make_subplots(rows=3, cols=1, shared_xaxes=True,
                         vertical_spacing=0.03,
-                        row_heights=[1.5, 0.3, 0.5])
+                        row_heights=[1.8, 0.8, 0.8])
     
     # Draw candlestick chart
     fig.add_trace(go.Candlestick(x=df.index, 
@@ -115,5 +115,5 @@ if ticker:
         fig.add_hline(y=70, line_dash='dash', line_color='red', row=3, col=1)
         fig.update_yaxes(title='RSI', row=3, col=1)
                         
-    st.plotly_chart(fig)   
+    st.plotly_chart(fig, use_container_width=True)   
     del st.session_state['ticker']
