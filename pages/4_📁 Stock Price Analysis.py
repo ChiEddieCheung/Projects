@@ -93,7 +93,7 @@ if ticker:
     fig.update_layout(title=f'{ticker.upper()} Candlestick Chart', 
         xaxis_rangeslider_visible=False,
         showlegend=False,
-        margin={'l':40,'t':30,'b':20,'r':20})
+        margin={'l':40,'t':40,'b':20,'r':20})
     
     colVolume, colRSI = st.columns([1,3])
     with colVolume:
