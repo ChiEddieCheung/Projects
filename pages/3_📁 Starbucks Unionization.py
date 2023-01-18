@@ -103,7 +103,7 @@ def heatmap(x):
         color = 'gold'
     return[f'background-color: {color}']*6
 
-with st.expander('Show stores map data', expanded=False):
+with st.expander('Show stores data', expanded=False):
     st.dataframe(df.style.apply(heatmap, axis=1), use_container_width=True)
 
 # Plotly scatter mapbox method
