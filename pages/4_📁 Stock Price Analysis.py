@@ -90,8 +90,8 @@ if ticker:
     # Remove weekend gaps on the chart
     fig.update_xaxes(rangebreaks=[dict(bounds=['sat','mon'])])
 
-    fig.update_layout(title=f'{ticker.upper()} Candlestick Chart', 
-        xaxis_rangeslider_visible=False,
+    fig.update_layout(title='', 
+      xaxis_rangeslider_visible=False,
         showlegend=False,
         margin={'l':40,'t':40,'b':20,'r':20})
     
