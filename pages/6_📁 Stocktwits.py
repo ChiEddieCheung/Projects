@@ -35,21 +35,21 @@ if symbol:
         data = r.json() 
                
         stock = yf.Ticker(symbol)          
-        #info = stock.get_info()        
-        info = stock.info
-        #imgUrl = info['logo_url']
+        info = stock.get_info()        
+        
+        imgUrl = info['logo_url']
         price = info['regularMarketPrice']
     
         st.success(stock.get_info()['shortName'])
         
-        st.write(info)
+        st.write(price)
 
         col1, col2 = st.columns([1,4])
         with col1:
             st.image(imgUrl)
         with col2:
             st.metric(label='', value=f'${price}', 
-            delta=round(info['regularMarketPrice'] - info['previousClose'], 2))
+            delta=round(price - info['previousClose'], 2))
 
         st.write('___')
         for message in data['messages']:                  
