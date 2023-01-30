@@ -34,10 +34,10 @@ if symbol:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json() 
                
-        #st.success(f"###### {data['symbol']['title']} \n {Stock_Price}") 
         stock = yf.Ticker(symbol)          
-        info = stock.get_info()        
-        imgUrl = info['logo_url']
+        #info = stock.get_info()        
+        info = stock.basic_info
+        #imgUrl = info['logo_url']
         price = info['regularMarketPrice']
     
         st.success(stock.get_info()['shortName'])
