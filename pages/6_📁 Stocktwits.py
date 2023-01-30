@@ -36,7 +36,7 @@ if symbol:
                
         stock = yf.Ticker(symbol)          
         #info = stock.get_info()        
-        info = stock.basic_info
+        info = stock.info
         #imgUrl = info['logo_url']
         price = info['regularMarketPrice']
     
