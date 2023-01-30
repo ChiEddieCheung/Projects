@@ -30,7 +30,7 @@ with colTicker:
     
 search = st.button('Search', key={symbol})
 if symbol:
-    try:
+    #try:
         r = requests.get(f"https://api.stocktwits.com/api/2/streams/symbol/{symbol}.json")
         data = r.json() 
                
@@ -58,7 +58,7 @@ if symbol:
             st.write(message['created_at'])
             st.write(message['body'])        
             st.write('___')                
-    except:
-        st.write('\N{cross mark} Stock ticker not found!')
+    #except:
+    #    st.write('\N{cross mark} Stock ticker not found!')
 
     del st.session_state['symbol']
