@@ -42,8 +42,8 @@ if symbol:
         last_price = stock.fast_info['last_price']
         prev_close = stock.fast_info['previous_close']
     
-        st.write(f'Last price: {last_price}')
-        st.write(f'Previous close: {prev_close}')
+        #st.write(f'Last price: {last_price}')
+        #st.write(f'Previous close: {prev_close}')
         
         st.success(info['shortName'])
         
@@ -51,7 +51,7 @@ if symbol:
         with col1:
             st.image(imgUrl)
         with col2:
-            st.metric(label='', value=f'${price}', 
+            st.metric(label='', value=f'${last_price}', 
             delta=round(last_price - prev_close, 2))
 
         st.write('___')
