@@ -36,14 +36,15 @@ if symbol:
                
         stock = yf.Ticker(symbol)          
         info = stock.info   
-        
-        st.write(info)
-        
+                        
         imgUrl = info['logo_url']
         #price = info['regularMarketPrice']
         last_price = stock.fast_info['last_price']
         prev_close = stock.fast_info['previous_close']
     
+        st.write(f'Last price: {last_price}')
+        st.write(f'Previous close: {prev_close}')
+        
         st.success(info['shortName'])
         
         col1, col2 = st.columns([1,4])
