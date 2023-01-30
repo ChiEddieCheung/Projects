@@ -35,14 +35,14 @@ if symbol:
         data = r.json() 
                
         stock = yf.Ticker(symbol)          
-        info = stock.get_info()        
+        info = stock.info()        
         
         imgUrl = info['logo_url']
         price = info['regularMarketPrice']
     
         st.success(stock.get_info()['shortName'])
         
-        st.write(price)
+        st.write(info)
 
         col1, col2 = st.columns([1,4])
         with col1:
