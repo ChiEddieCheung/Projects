@@ -40,9 +40,9 @@ if symbol:
         imgUrl = info['logo_url']
         price = info['regularMarketPrice']
     
-        st.success(stock.get_info()['shortName'])
+        st.success(info['shortName'])
         
-        st.write(stock)
+        st.write(info)
 
         col1, col2 = st.columns([1,4])
         with col1:
