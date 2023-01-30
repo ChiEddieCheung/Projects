@@ -41,6 +41,8 @@ if symbol:
         price = info['regularMarketPrice']
     
         st.success(stock.get_info()['shortName'])
+        
+        st.write(info)
 
         col1, col2 = st.columns([1,4])
         with col1:
