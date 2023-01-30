@@ -53,7 +53,7 @@ if ticker:
         st.image(imgUrl)
     with col2:
         st.metric(label='', value=f'${price}', 
-        delta=round(info['regularMarketPrice'] - info['previousClose'], 2))
+        #delta=round(info['regularMarketPrice'] - info['previousClose'], 2))
     
     st.write('')
     df = pd.DataFrame(yf.download(ticker, start=start_date, end=end_date,))             
