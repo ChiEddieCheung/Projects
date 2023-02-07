@@ -74,7 +74,7 @@ if ticker:
     # The figure has 3 subplots: candlestick, volume, and RSI
     fig = make_subplots(rows=3, cols=1, shared_xaxes=True,
                         vertical_spacing=0.03,
-                        row_heights=[8.0, 0.8, 2])
+                        row_heights=[8, 2, 2])
     
     # Draw candlestick chart
     fig.add_trace(go.Candlestick(x=df.index, 
