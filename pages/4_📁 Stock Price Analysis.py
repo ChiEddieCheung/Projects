@@ -31,7 +31,7 @@ datediff = datetime.timedelta(365)
 
 col1, col2, col3 = st.columns([1,1,1])
 with col1:
-    ticker = st.text_input('Enter a stock ticker:', max_chars=5, key='ticker')
+    ticker = st.text_input('Enter a stock ticker:', max_chars=5, key='ticker')    
 with col2:
     start_date = today - datediff
     start_date = st.date_input('Start Date:', value=start_date)
@@ -60,11 +60,11 @@ if ticker:
     st.write('')
     df = pd.DataFrame(yf.download(ticker, start=start_date, end=end_date,))             
 
+    df['5 EMA'] = ta.ema(close=df['Adj Close'], length=5)
+    #df['5 EMA'] = df['Adj Close'].rolling(window=5).mean()
+    
     df['20 EMA'] = ta.ema(close=df['Adj Close'], length=20)
     #df['20 EMA'] = df['Adj Close'].rolling(window=20).mean()
-    
-    df['50 EMA'] = ta.ema(close=df['Adj Close'], length=50)
-    #df['50 EMA'] = df['Adj Close'].rolling(window=50).mean()
 
     df['RSI'] = ta.rsi(close=df['Adj Close'], length=14)
 
@@ -74,7 +74,7 @@ if ticker:
     # The figure has 3 subplots: candlestick, volume, and RSI
     fig = make_subplots(rows=3, cols=1, shared_xaxes=True,
                         vertical_spacing=0.03,
-                        row_heights=[3.0, 0.8, 0.8])
+                        row_heights=[5.0, 0.8, 0.8])
     
     # Draw candlestick chart
     fig.add_trace(go.Candlestick(x=df.index, 
