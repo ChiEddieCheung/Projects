@@ -36,9 +36,9 @@ if symbol:
                
         stock = yf.Ticker(symbol)          
         info = stock.info   
+        st.write(info)
                                 
         imgUrl = info['logo_url']
-        #price = info['regularMarketPrice']
         last_price = round(stock.fast_info['lastPrice'], 2)
         prev_close = stock.fast_info['previousClose']
           
