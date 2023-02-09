@@ -35,7 +35,7 @@ if symbol:
         data = r.json() 
                
         stock = yf.Ticker(symbol)          
-        info = stock.fast_info   
+        info = stock.info   
         st.write(info)
                                 
         imgUrl = info['logo_url']
