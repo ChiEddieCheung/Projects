@@ -3,7 +3,7 @@ pandas==1.5.1
 requests==2.28.1
 streamlit==1.15.0
 yahoo_fin==0.8.9.1
-yfinance==0.2.9
+yfinance==0.2.10
 mysql-connector-python==8.0.31
 Pillow==9.3.0
 PyQRCode==1.2.1
