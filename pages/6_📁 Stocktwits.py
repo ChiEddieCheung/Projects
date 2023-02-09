@@ -35,8 +35,8 @@ if symbol:
         data = r.json() 
                
         stock = yf.Ticker(symbol)          
-        #info = stock.basic_info   
-        st.write(stock)
+        info = stock.info()
+        st.write(info)
                                 
         imgUrl = info['logo_url']
         last_price = round(stock.fast_info['lastPrice'], 2)
