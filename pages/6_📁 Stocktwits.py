@@ -35,13 +35,12 @@ if symbol:
         data = r.json() 
                
         stock = yf.Ticker(symbol)          
-        info = stock.fast_info   
-        st.write(info)
-                        
+        #info = stock.info   
+                                
         imgUrl = info['logo_url']
         #price = info['regularMarketPrice']
-        last_price = round(stock.fast_info['last_price'], 2)
-        prev_close = stock.fast_info['previous_close']
+        last_price = round(stock.fast_info['lastPrice'], 2)
+        prev_close = stock.fast_info['previousClose']
           
         st.success(info['shortName'])
         
