@@ -7,7 +7,7 @@ from plotly.subplots import make_subplots
 import yfinance as yf
 
 st.set_page_config(
-    page_title = 'Stock Price Analysis',
+    page_title = 'Stock Price Trend Analysis',
     layout = 'wide'
 )
 
