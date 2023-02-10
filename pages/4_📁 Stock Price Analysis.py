@@ -49,7 +49,7 @@ if ticker:
     price = round(stock.fast_info['last_price'], 2)
     prev_close = stock.fast_info['previous_close']
     
-    st.success(stock.fast_info['shortName'])
+    #st.success(stock.fast_info['shortName'])
     
     col1, col2 = st.columns([1,4])
     #with col1:
