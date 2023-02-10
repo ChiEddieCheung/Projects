@@ -41,6 +41,7 @@ if symbol:
     prev_close = stock.fast_info['previousClose']
           
     #st.success(info['shortName'])
+    st.success(data['symbol']['title'])
 
     col1, col2 = st.columns([1,4])
     #with col1:
