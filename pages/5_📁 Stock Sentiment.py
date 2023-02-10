@@ -44,9 +44,9 @@ if symbol:
 
         #st.success(f"###### {data['symbol']['title']} \n {Stock_Price}")
         stock = yf.Ticker(symbol)
-        info = stock.info
+        #info = stock.info
         
-        imgUrl = info['logo_url']
+        #imgUrl = info['logo_url']
         #price = info['regularMarketPrice']
         price = round(stock.fast_info['last_price'], 2)
         prev_close = stock.fast_info['previous_close']
@@ -54,8 +54,8 @@ if symbol:
         st.success(data['symbol']['title'])
 
         col1, col2 = st.columns([1,4])
-        with col1:
-            st.image(imgUrl)
+        #with col1:
+            #st.image(imgUrl)
         with col2:
             st.metric(label='', value=f'${price}', 
             delta=round(price - prev_close, 2))
