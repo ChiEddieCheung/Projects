@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 st.set_page_config(
-    page_title="Starbucks Stores Unionization",
+    page_title="Starbucks Unionization",
     layout = "wide"    
 )
 
@@ -17,7 +17,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 html_temp = """
     <div style="background-color:{};padding:5px;border-radius:8px">
-    <h1 style="color:{};text-align: center;font-size: 24px">Starbucks Stores Unionization</h1>
+    <h1 style="color:{};text-align: center;font-size: 24px">Starbucks Unionization</h1>
     </div><br>
 """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
