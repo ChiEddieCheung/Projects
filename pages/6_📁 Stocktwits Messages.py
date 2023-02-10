@@ -5,7 +5,7 @@ import yfinance as yf
 
 #st.cache(suppress_st_warning=True)
 st.set_page_config(
-    page_title="Stocktwits Latest Messages",
+    page_title="Stocktwits Messages",
     layout = "wide",    
 )
   
@@ -19,7 +19,7 @@ st.markdown(hide_menu, unsafe_allow_html=True)
 
 html_temp = """
     <div style="background-color:{};padding:5px;border-radius:8px">
-    <h1 style="color:{};text-align: center;font-size: 24px">Stocktwits Latest Messages</h1>
+    <h1 style="color:{};text-align: center;font-size: 24px">Stocktwits Messages</h1>
     </div><br>
 """
 st.markdown(html_temp.format('#e2f0fb','black'),unsafe_allow_html=True)
