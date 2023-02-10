@@ -92,7 +92,7 @@ elif selection == 'Stamen Watercolor':
 # Color each row based on 'Store Status'
 def heatmap(x):                        
     if (x['Store Status']) == 'Union Win':
-        color = 'lightgreen'
+        color = 'green'
     elif (x['Store Status']) == 'Union Loss':
         color = 'tomato'
     elif (x['Store Status']) == 'Store Closed':
