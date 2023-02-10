@@ -34,17 +34,17 @@ if symbol:
     data = r.json() 
                
     stock = yf.Ticker(symbol)          
-    info = stock.info
+    #info = stock.info
 
-    imgUrl = info['logo_url']
+    #imgUrl = info['logo_url']
     last_price = round(stock.fast_info['lastPrice'], 2)
     prev_close = stock.fast_info['previousClose']
           
-    st.success(info['shortName'])
+    #st.success(info['shortName'])
 
     col1, col2 = st.columns([1,4])
-    with col1:
-        st.image(imgUrl)
+    #with col1:
+        #st.image(imgUrl)
     with col2:
         st.metric(label='', value=f'${last_price}', 
         delta=round(last_price - prev_close, 2))
