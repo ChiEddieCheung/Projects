@@ -107,7 +107,7 @@ with st.expander('Show stores data', expanded=False):
     st.dataframe(df.style.apply(heatmap, axis=1), use_container_width=True)
 
 # Plotly scatter mapbox method
-Condition_Color = {'Union Win': 'lightgreen', \
+Condition_Color = {'Union Win': 'green', \
     'Union Loss': 'tomato', \
     'Store Closed': 'tomato', \
     'Filed': 'yellow', 'Contested': 'yellow'}
